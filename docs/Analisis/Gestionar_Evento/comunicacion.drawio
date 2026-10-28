@@ -1,0 +1,37 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="yKbSJwDjivh_SWgMh2ni">
+    <mxGraphModel dx="1217" dy="795" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="actor" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="&lt;b&gt;&amp;lt;&amp;lt;actor&amp;gt;&amp;gt;&lt;/b&gt;&lt;br&gt;Organizador" vertex="1">
+          <mxGeometry height="60" width="30" x="100" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="boundary" parent="1" style="shape=umlBoundary;whiteSpace=wrap;html=1;verticalAlign=top;verticalLabelPosition=bottom;" value="&lt;b&gt;&amp;lt;&amp;lt;límite&amp;gt;&amp;gt;&lt;/b&gt;&lt;br&gt;Interfaz&lt;br&gt;Organizador" vertex="1">
+          <mxGeometry height="50" width="60" x="280" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="entity" parent="1" style="ellipse;shape=umlEntity;whiteSpace=wrap;html=1;verticalAlign=top;verticalLabelPosition=bottom;" value="&lt;b&gt;&amp;lt;&amp;lt;entidad&amp;gt;&amp;gt;&lt;/b&gt;&lt;br&gt;Evento" vertex="1">
+          <mxGeometry height="60" width="60" x="540" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="edge1" edge="1" parent="1" source="actor" style="endArrow=block;html=1;endFill=1;strokeWidth=1.5;" target="boundary">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge2" edge="1" parent="1" source="boundary" style="endArrow=block;html=1;endFill=1;strokeWidth=1.5;" target="entity">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GVuOpHqzyQzJi9GeRscL-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;white-space: nowrap;&quot;&gt;2. Actualiza texto, fecha y hora&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="190" x="350" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="GVuOpHqzyQzJi9GeRscL-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;white-space: nowrap;&quot;&gt;1. Ingresa nueva descripción&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="170" x="120" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="GVuOpHqzyQzJi9GeRscL-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;span class=&quot;&quot; style=&quot;&quot;&gt;Según el enfoque de Stephen R. Schach, no es indispensable agregar una clase control en este escenario&lt;/span&gt;&lt;span class=&quot;&quot; style=&quot;&quot;&gt;&lt;sup class=&quot;superscript&quot;&gt;&lt;/sup&gt;&lt;/span&gt;&lt;span class=&quot;&quot; style=&quot;&quot;&gt;. Las clases de control se justifican cuando existe una lógica de negocio compleja, cálculos matemáticos o la necesidad de coordinar múltiples objetos. Al ser una operación directa y sencilla de actualización de datos (similar a un método &lt;i&gt;setter&lt;/i&gt; básico) que no requiere otras validaciones, la clase límite (&lt;code&gt;InterfazOrganizador&lt;/code&gt;) puede comunicarse directamente con la clase entidad (&lt;code&gt;Evento&lt;/code&gt;)&lt;/span&gt;&lt;span class=&quot;&quot; style=&quot;&quot;&gt;&lt;sup class=&quot;superscript&quot;&gt;&lt;/sup&gt;&lt;/span&gt;. Crear un control para esta acción específica solo generaría una clase intermediaria innecesaria (&quot;pasamanos&quot;)." vertex="1">
+          <mxGeometry height="120" width="590" x="60" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="GVuOpHqzyQzJi9GeRscL-7" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="RETO 6 - ¿Quién coordina la operación sencilla?" vertex="1">
+          <mxGeometry height="30" width="310" x="60" y="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

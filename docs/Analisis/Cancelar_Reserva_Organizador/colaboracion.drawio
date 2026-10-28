@@ -1,0 +1,19 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="campusfest">
+    <mxGraphModel dx="1038" dy="835" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="titulo" value="CdU 9 - Cancelar reserva (a los 10 mins de una reserva) - Diagrama de colaboración" style="text;html=1;fontSize=18;fontStyle=1;align=left;" vertex="1" parent="1"><mxGeometry x="40" y="20" width="700" height="30" as="geometry" /></mxCell>
+        <mxCell id="tmp" value="10 mins de una reserva" style="html=1;shape=mxgraph.bpmn.shape;perimeter=ellipsePerimeter;outline=standard;symbol=timer;verticalLabelPosition=bottom;verticalAlign=top;whiteSpace=wrap;" vertex="1" parent="1"><mxGeometry x="110" y="150" width="40" height="40" as="geometry" /></mxCell>
+        <mxCell id="ges" value="GestiónReserva" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;verticalLabelPosition=bottom;verticalAlign=top;" vertex="1" parent="1"><mxGeometry x="330" y="135" width="60" height="70" as="geometry" /></mxCell>
+        <mxCell id="evt" value="Evento" style="shape=umlEntity;whiteSpace=wrap;html=1;verticalLabelPosition=bottom;verticalAlign=top;" vertex="1" parent="1"><mxGeometry x="560" y="340" width="60" height="60" as="geometry" /></mxCell>
+        <mxCell id="res" value="Reserva" style="shape=umlEntity;whiteSpace=wrap;html=1;verticalLabelPosition=bottom;verticalAlign=top;" vertex="1" parent="1"><mxGeometry x="560" y="140" width="60" height="60" as="geometry" /></mxCell>
+        <mxCell id="e0" value="" style="endArrow=none;html=1;fontSize=11;labelBackgroundColor=default;" edge="1" parent="1" source="tmp" target="ges"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e1" value="" style="endArrow=none;html=1;fontSize=11;labelBackgroundColor=default;" edge="1" parent="1" source="ges" target="evt"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e2" value="" style="endArrow=none;html=1;fontSize=11;labelBackgroundColor=default;" edge="1" parent="1" source="ges" target="res"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="nota" value="Si la reserva no se confirma en 10 minutos, el sistema la cancela (pasa a Vencida) y libera el cupo." style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;" vertex="1" parent="1"><mxGeometry x="40" y="80" width="900" height="30" as="geometry" /></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

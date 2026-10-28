@@ -1,0 +1,243 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="seq-Generar_Reporte_Asistencia">
+    <mxGraphModel dx="842" dy="550" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <UserObject label="" plantUmlData='{"data": "@startuml\nhide footbox\nactor Organizador as Organizador\nboundary InterfazOrganizador as InterfazOrganizador\ncontrol Gesti\u00f3nAsistencia as GestionAsistencia\nentity Evento as Evento\nentity Asistencia as Asistencia\nboundary ReporteAsistencia as ReporteAsistencia\n\nOrganizador -&gt; InterfazOrganizador : 1. Seleccionar evento\nInterfazOrganizador -&gt; GestionAsistencia : 2. generarReporteAsistencia(evento)\nGestionAsistencia -&gt; Evento : 3. Solicitar informaci\u00f3n del evento\nEvento --&gt; GestionAsistencia : 4. Datos del evento\nGestionAsistencia -&gt; Asistencia : 5. Solicitar ingresos registrados con QR\nAsistencia --&gt; GestionAsistencia : 6. Lista de asistencias\nGestionAsistencia -&gt; GestionAsistencia : 7. Calcular listado de asistencia\nGestionAsistencia -&gt; ReporteAsistencia : 8. Generar reporte de asistencia\nReporteAsistencia --&gt; GestionAsistencia : 9. Reporte generado\nGestionAsistencia --&gt; InterfazOrganizador : 10. Reporte generado\nReporteAsistencia --&gt; Organizador : 11. Mostrar reporte de asistencia\n@enduml", "config": null}' id="seq_Generar_Reporte_Asistencia-1">
+          <mxCell connectable="0" parent="1" style="group;transparentBounds=1;editIcon=1;lockedGroup=0;groupPadding=10;" vertex="1">
+            <mxGeometry as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="seq_Generar_Reporte_Asistencia-title" parent="seq_Generar_Reporte_Asistencia-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;CdU 8 · Generar reporte de asistencia (Diagrama de secuencia)&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="320" x="20" y="15" as="geometry" />
+        </mxCell>
+        <UserObject label="" plantUmlId="pl_5" plantUmlBaseStyle="shape=umlLifeline;perimeter=lifelinePerimeter;participant=headless;size=75.49;lifelineMirror=1;dashPattern=5 5;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&amp;quot;edgeStyle&amp;quot;:&amp;quot;sequenceEdgeStyle&amp;quot;,&amp;quot;libavoidRouting&amp;quot;:0,&amp;quot;curved&amp;quot;:0,&amp;quot;rounded&amp;quot;:0};fillColor=none;strokeColor=#181818;strokeWidth=0.5;" plantUmlBaseValue="" id="seq_Generar_Reporte_Asistencia-pl-0">
+          <mxCell parent="seq_Generar_Reporte_Asistencia-1" style="shape=umlLifeline;perimeter=lifelinePerimeter;participant=headless;size=75.49;lifelineMirror=1;dashPattern=5 5;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&amp;quot;edgeStyle&amp;quot;:&amp;quot;sequenceEdgeStyle&amp;quot;,&amp;quot;libavoidRouting&amp;quot;:0,&amp;quot;curved&amp;quot;:0,&amp;quot;rounded&amp;quot;:0};fillColor=none;strokeColor=#181818;strokeWidth=0.5;" vertex="1">
+            <mxGeometry height="506.39" width="106.5" x="20.0" y="100.0" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="act_0" plantUmlBaseStyle='rounded=0;fillColor=#FFFFFF;strokeColor=#181818;strokeWidth=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={"edgeStyle":"sequenceEdgeStyle","libavoidRouting":0,"curved":0,"rounded":0};part=1;' plantUmlBaseValue="" id="seq_Generar_Reporte_Asistencia-act-0">
+          <mxCell parent="seq_Generar_Reporte_Asistencia-pl-0" style='rounded=0;fillColor=#FFFFFF;strokeColor=#181818;strokeWidth=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={"edgeStyle":"sequenceEdgeStyle","libavoidRouting":0,"curved":0,"rounded":0};part=1;' vertex="1">
+            <mxGeometry height="306.1" width="10" x="48.25" y="107.8" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Organizador" plantUmlId="p_20" plantUmlBaseStyle="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;spacingTop=-5;fillColor=#E2E2F0;strokeColor=#181818;fontColor=#000000;fontSize=14;html=1;part=1;" plantUmlBaseValue="Organizador" id="seq_Generar_Reporte_Asistencia-ico-0">
+          <mxCell parent="seq_Generar_Reporte_Asistencia-pl-0" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;spacingTop=-5;fillColor=#E2E2F0;strokeColor=#181818;fontColor=#000000;fontSize=14;html=1;part=1;" vertex="1">
+            <mxGeometry height="58" width="26" x="40.25" y="0.5" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="pl_6" plantUmlBaseStyle="shape=umlLifeline;perimeter=lifelinePerimeter;participant=headless;size=43.49;lifelineMirror=1;dashPattern=5 5;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&amp;quot;edgeStyle&amp;quot;:&amp;quot;sequenceEdgeStyle&amp;quot;,&amp;quot;libavoidRouting&amp;quot;:0,&amp;quot;curved&amp;quot;:0,&amp;quot;rounded&amp;quot;:0};fillColor=none;strokeColor=#181818;strokeWidth=0.5;" plantUmlBaseValue="" id="seq_Generar_Reporte_Asistencia-pl-1">
+          <mxCell parent="seq_Generar_Reporte_Asistencia-1" style="shape=umlLifeline;perimeter=lifelinePerimeter;participant=headless;size=43.49;lifelineMirror=1;dashPattern=5 5;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&amp;quot;edgeStyle&amp;quot;:&amp;quot;sequenceEdgeStyle&amp;quot;,&amp;quot;libavoidRouting&amp;quot;:0,&amp;quot;curved&amp;quot;:0,&amp;quot;rounded&amp;quot;:0};fillColor=none;strokeColor=#181818;strokeWidth=0.5;" vertex="1">
+            <mxGeometry height="474.39" width="166.5" x="191.5" y="132.0" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="act_1" plantUmlBaseStyle='rounded=0;fillColor=#FFFFFF;strokeColor=#181818;strokeWidth=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={"edgeStyle":"sequenceEdgeStyle","libavoidRouting":0,"curved":0,"rounded":0};part=1;' plantUmlBaseValue="" id="seq_Generar_Reporte_Asistencia-act-1">
+          <mxCell parent="seq_Generar_Reporte_Asistencia-pl-1" style='rounded=0;fillColor=#FFFFFF;strokeColor=#181818;strokeWidth=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={"edgeStyle":"sequenceEdgeStyle","libavoidRouting":0,"curved":0,"rounded":0};part=1;' vertex="1">
+            <mxGeometry height="276.79" width="10" x="78.25" y="75.8" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="InterfazOrganizador" plantUmlId="p_22" plantUmlBaseStyle="shape=umlBoundary;verticalLabelPosition=bottom;verticalAlign=top;spacingTop=-2.5;fillColor=#E2E2F0;strokeColor=#181818;fontColor=#000000;fontSize=14;html=1;part=1;" plantUmlBaseValue="InterfazOrganizador" id="seq_Generar_Reporte_Asistencia-ico-1">
+          <mxCell parent="seq_Generar_Reporte_Asistencia-pl-1" style="shape=umlBoundary;verticalLabelPosition=bottom;verticalAlign=top;spacingTop=-2.5;fillColor=#E2E2F0;strokeColor=#181818;fontColor=#000000;fontSize=14;html=1;part=1;" vertex="1">
+            <mxGeometry height="24" width="41" x="62.75" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="pl_7" plantUmlBaseStyle="shape=umlLifeline;perimeter=lifelinePerimeter;participant=headless;size=47.49;lifelineMirror=1;dashPattern=5 5;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&amp;quot;edgeStyle&amp;quot;:&amp;quot;sequenceEdgeStyle&amp;quot;,&amp;quot;libavoidRouting&amp;quot;:0,&amp;quot;curved&amp;quot;:0,&amp;quot;rounded&amp;quot;:0};fillColor=none;strokeColor=#181818;strokeWidth=0.5;" plantUmlBaseValue="" id="seq_Generar_Reporte_Asistencia-pl-2">
+          <mxCell parent="seq_Generar_Reporte_Asistencia-1" style="shape=umlLifeline;perimeter=lifelinePerimeter;participant=headless;size=47.49;lifelineMirror=1;dashPattern=5 5;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&amp;quot;edgeStyle&amp;quot;:&amp;quot;sequenceEdgeStyle&amp;quot;,&amp;quot;libavoidRouting&amp;quot;:0,&amp;quot;curved&amp;quot;:0,&amp;quot;rounded&amp;quot;:0};fillColor=none;strokeColor=#181818;strokeWidth=0.5;" vertex="1">
+            <mxGeometry height="478.39" width="151.5" x="423.0" y="128.0" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="act_2" plantUmlBaseStyle='rounded=0;fillColor=#FFFFFF;strokeColor=#181818;strokeWidth=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={"edgeStyle":"sequenceEdgeStyle","libavoidRouting":0,"curved":0,"rounded":0};part=1;' plantUmlBaseValue="" id="seq_Generar_Reporte_Asistencia-act-2">
+          <mxCell parent="seq_Generar_Reporte_Asistencia-pl-2" style='rounded=0;fillColor=#FFFFFF;strokeColor=#181818;strokeWidth=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={"edgeStyle":"sequenceEdgeStyle","libavoidRouting":0,"curved":0,"rounded":0};part=1;' vertex="1">
+            <mxGeometry height="247.48" width="10" x="70.75" y="109.11" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="GestiónAsistencia" plantUmlId="p_24" plantUmlBaseStyle="ellipse;shape=umlControl;verticalLabelPosition=bottom;verticalAlign=top;spacingTop=-2.5;fillColor=#E2E2F0;strokeColor=#181818;fontColor=#000000;fontSize=14;html=1;part=1;" plantUmlBaseValue="GestiónAsistencia" id="seq_Generar_Reporte_Asistencia-ico-2">
+          <mxCell parent="seq_Generar_Reporte_Asistencia-pl-2" style="ellipse;shape=umlControl;verticalLabelPosition=bottom;verticalAlign=top;spacingTop=-2.5;fillColor=#E2E2F0;strokeColor=#181818;fontColor=#000000;fontSize=14;html=1;part=1;" vertex="1">
+            <mxGeometry height="28" width="24" x="63.75" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="msg_16" plantUmlBaseStyle="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="" id="seq_Generar_Reporte_Asistencia-msg-6">
+          <mxCell edge="1" parent="seq_Generar_Reporte_Asistencia-pl-2" source="seq_Generar_Reporte_Asistencia-act-2" style="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="seq_Generar_Reporte_Asistencia-act-2">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="118.75" y="255.66" />
+                <mxPoint x="118.75" y="268.66" />
+              </Array>
+              <mxPoint x="80.75" y="255.66" as="sourcePoint" />
+              <mxPoint x="80.75" y="268.66" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="7. Calcular listado de asistencia" plantUmlId="msglbl_16" plantUmlBaseStyle="text;html=1;fontColor=#000000;fontSize=13;align=left;verticalAlign=middle;" plantUmlBaseValue="7. Calcular listado de asistencia" id="seq_Generar_Reporte_Asistencia-msglbl-6">
+          <mxCell parent="seq_Generar_Reporte_Asistencia-msg-6" style="text;html=1;fontColor=#000000;fontSize=12;align=left;verticalAlign=middle;" vertex="1">
+            <mxGeometry height="18.31" relative="1" width="160" x="-1" as="geometry">
+              <mxPoint x="2.0" y="-20.31" as="offset" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="pl_8" plantUmlBaseStyle="shape=umlLifeline;perimeter=lifelinePerimeter;participant=headless;size=43.49;lifelineMirror=1;dashPattern=5 5;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&amp;quot;edgeStyle&amp;quot;:&amp;quot;sequenceEdgeStyle&amp;quot;,&amp;quot;libavoidRouting&amp;quot;:0,&amp;quot;curved&amp;quot;:0,&amp;quot;rounded&amp;quot;:0};fillColor=none;strokeColor=#181818;strokeWidth=0.5;" plantUmlBaseValue="" id="seq_Generar_Reporte_Asistencia-pl-3">
+          <mxCell parent="seq_Generar_Reporte_Asistencia-1" style="shape=umlLifeline;perimeter=lifelinePerimeter;participant=headless;size=43.49;lifelineMirror=1;dashPattern=5 5;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&amp;quot;edgeStyle&amp;quot;:&amp;quot;sequenceEdgeStyle&amp;quot;,&amp;quot;libavoidRouting&amp;quot;:0,&amp;quot;curved&amp;quot;:0,&amp;quot;rounded&amp;quot;:0};fillColor=none;strokeColor=#181818;strokeWidth=0.5;" vertex="1">
+            <mxGeometry height="474.39" width="85.0" x="639.5" y="132.0" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="act_3" plantUmlBaseStyle='rounded=0;fillColor=#FFFFFF;strokeColor=#181818;strokeWidth=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={"edgeStyle":"sequenceEdgeStyle","libavoidRouting":0,"curved":0,"rounded":0};part=1;' plantUmlBaseValue="" id="seq_Generar_Reporte_Asistencia-act-3">
+          <mxCell parent="seq_Generar_Reporte_Asistencia-pl-3" style='rounded=0;fillColor=#FFFFFF;strokeColor=#181818;strokeWidth=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={"edgeStyle":"sequenceEdgeStyle","libavoidRouting":0,"curved":0,"rounded":0};part=1;' vertex="1">
+            <mxGeometry height="29.31" width="10" x="37.5" y="134.42" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Evento" plantUmlId="p_26" plantUmlBaseStyle="ellipse;shape=umlEntity;verticalLabelPosition=bottom;verticalAlign=top;spacingTop=-4.5;fillColor=#E2E2F0;strokeColor=#181818;fontColor=#000000;fontSize=14;html=1;part=1;" plantUmlBaseValue="Evento" id="seq_Generar_Reporte_Asistencia-ico-3">
+          <mxCell parent="seq_Generar_Reporte_Asistencia-pl-3" style="ellipse;shape=umlEntity;verticalLabelPosition=bottom;verticalAlign=top;spacingTop=-4.5;fillColor=#E2E2F0;strokeColor=#181818;fontColor=#000000;fontSize=14;html=1;part=1;" vertex="1">
+            <mxGeometry height="26" width="24" x="30.5" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="pl_9" plantUmlBaseStyle="shape=umlLifeline;perimeter=lifelinePerimeter;participant=headless;size=43.49;lifelineMirror=1;dashPattern=5 5;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&amp;quot;edgeStyle&amp;quot;:&amp;quot;sequenceEdgeStyle&amp;quot;,&amp;quot;libavoidRouting&amp;quot;:0,&amp;quot;curved&amp;quot;:0,&amp;quot;rounded&amp;quot;:0};fillColor=none;strokeColor=#181818;strokeWidth=0.5;" plantUmlBaseValue="" id="seq_Generar_Reporte_Asistencia-pl-4">
+          <mxCell parent="seq_Generar_Reporte_Asistencia-1" style="shape=umlLifeline;perimeter=lifelinePerimeter;participant=headless;size=43.49;lifelineMirror=1;dashPattern=5 5;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&amp;quot;edgeStyle&amp;quot;:&amp;quot;sequenceEdgeStyle&amp;quot;,&amp;quot;libavoidRouting&amp;quot;:0,&amp;quot;curved&amp;quot;:0,&amp;quot;rounded&amp;quot;:0};fillColor=none;strokeColor=#181818;strokeWidth=0.5;" vertex="1">
+            <mxGeometry height="474.39" width="99.0" x="789.5" y="132.0" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="act_4" plantUmlBaseStyle='rounded=0;fillColor=#FFFFFF;strokeColor=#181818;strokeWidth=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={"edgeStyle":"sequenceEdgeStyle","libavoidRouting":0,"curved":0,"rounded":0};part=1;' plantUmlBaseValue="" id="seq_Generar_Reporte_Asistencia-act-4">
+          <mxCell parent="seq_Generar_Reporte_Asistencia-pl-4" style='rounded=0;fillColor=#FFFFFF;strokeColor=#181818;strokeWidth=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={"edgeStyle":"sequenceEdgeStyle","libavoidRouting":0,"curved":0,"rounded":0};part=1;' vertex="1">
+            <mxGeometry height="29.31" width="10" x="44.5" y="193.04" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Asistencia" plantUmlId="p_28" plantUmlBaseStyle="ellipse;shape=umlEntity;verticalLabelPosition=bottom;verticalAlign=top;spacingTop=-4.5;fillColor=#E2E2F0;strokeColor=#181818;fontColor=#000000;fontSize=14;html=1;part=1;" plantUmlBaseValue="Asistencia" id="seq_Generar_Reporte_Asistencia-ico-4">
+          <mxCell parent="seq_Generar_Reporte_Asistencia-pl-4" style="ellipse;shape=umlEntity;verticalLabelPosition=bottom;verticalAlign=top;spacingTop=-4.5;fillColor=#E2E2F0;strokeColor=#181818;fontColor=#000000;fontSize=14;html=1;part=1;" vertex="1">
+            <mxGeometry height="26" width="24" x="37.5" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="pl_10" plantUmlBaseStyle="shape=umlLifeline;perimeter=lifelinePerimeter;participant=headless;size=43.49;lifelineMirror=1;dashPattern=5 5;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&amp;quot;edgeStyle&amp;quot;:&amp;quot;sequenceEdgeStyle&amp;quot;,&amp;quot;libavoidRouting&amp;quot;:0,&amp;quot;curved&amp;quot;:0,&amp;quot;rounded&amp;quot;:0};fillColor=none;strokeColor=#181818;strokeWidth=0.5;" plantUmlBaseValue="" id="seq_Generar_Reporte_Asistencia-pl-5">
+          <mxCell parent="seq_Generar_Reporte_Asistencia-1" style="shape=umlLifeline;perimeter=lifelinePerimeter;participant=headless;size=43.49;lifelineMirror=1;dashPattern=5 5;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&amp;quot;edgeStyle&amp;quot;:&amp;quot;sequenceEdgeStyle&amp;quot;,&amp;quot;libavoidRouting&amp;quot;:0,&amp;quot;curved&amp;quot;:0,&amp;quot;rounded&amp;quot;:0};fillColor=none;strokeColor=#181818;strokeWidth=0.5;" vertex="1">
+            <mxGeometry height="474.39" width="151.5" x="953.5" y="132.0" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="act_5" plantUmlBaseStyle='rounded=0;fillColor=#FFFFFF;strokeColor=#181818;strokeWidth=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={"edgeStyle":"sequenceEdgeStyle","libavoidRouting":0,"curved":0,"rounded":0};part=1;' plantUmlBaseValue="" id="seq_Generar_Reporte_Asistencia-act-5">
+          <mxCell parent="seq_Generar_Reporte_Asistencia-pl-5" style='rounded=0;fillColor=#FFFFFF;strokeColor=#181818;strokeWidth=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={"edgeStyle":"sequenceEdgeStyle","libavoidRouting":0,"curved":0,"rounded":0};part=1;' vertex="1">
+            <mxGeometry height="87.93" width="10" x="70.75" y="293.97" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="ReporteAsistencia" plantUmlId="p_30" plantUmlBaseStyle="shape=umlBoundary;verticalLabelPosition=bottom;verticalAlign=top;spacingTop=-2.5;fillColor=#E2E2F0;strokeColor=#181818;fontColor=#000000;fontSize=14;html=1;part=1;" plantUmlBaseValue="ReporteAsistencia" id="seq_Generar_Reporte_Asistencia-ico-5">
+          <mxCell parent="seq_Generar_Reporte_Asistencia-pl-5" style="shape=umlBoundary;verticalLabelPosition=bottom;verticalAlign=top;spacingTop=-2.5;fillColor=#E2E2F0;strokeColor=#181818;fontColor=#000000;fontSize=14;html=1;part=1;" vertex="1">
+            <mxGeometry height="24" width="41" x="55.25" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="1. Seleccionar evento" plantUmlId="msg_10" plantUmlBaseStyle="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="1. Seleccionar evento" id="seq_Generar_Reporte_Asistencia-msg-0">
+          <mxCell edge="1" parent="seq_Generar_Reporte_Asistencia-1" source="seq_Generar_Reporte_Asistencia-act-0" style="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="seq_Generar_Reporte_Asistencia-act-1">
+            <mxGeometry relative="1" x="0" as="geometry">
+              <Array as="points">
+                <mxPoint x="174.0" y="207.8" />
+              </Array>
+              <mxPoint x="78.25" y="207.8" as="sourcePoint" />
+              <mxPoint x="269.75" y="207.8" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="2. generarReporteAsistencia(evento)" plantUmlId="msg_11" plantUmlBaseStyle="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="2. generarReporteAsistencia(evento)" id="seq_Generar_Reporte_Asistencia-msg-1">
+          <mxCell edge="1" parent="seq_Generar_Reporte_Asistencia-1" source="seq_Generar_Reporte_Asistencia-act-1" style="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="seq_Generar_Reporte_Asistencia-act-2">
+            <mxGeometry relative="1" x="0" as="geometry">
+              <Array as="points">
+                <mxPoint x="386.75" y="237.11" />
+              </Array>
+              <mxPoint x="279.75" y="237.11" as="sourcePoint" />
+              <mxPoint x="493.75" y="237.11" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="3. Solicitar información del evento" plantUmlId="msg_12" plantUmlBaseStyle="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="3. Solicitar información del evento" id="seq_Generar_Reporte_Asistencia-msg-2">
+          <mxCell edge="1" parent="seq_Generar_Reporte_Asistencia-1" source="seq_Generar_Reporte_Asistencia-act-2" style="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="seq_Generar_Reporte_Asistencia-act-3">
+            <mxGeometry relative="1" x="0" as="geometry">
+              <Array as="points">
+                <mxPoint x="590.375" y="266.42" />
+              </Array>
+              <mxPoint x="503.75" y="266.42" as="sourcePoint" />
+              <mxPoint x="677.0" y="266.42" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="4. Datos del evento" plantUmlId="msg_13" plantUmlBaseStyle="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;dashed=1;dashPattern=2 2;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="4. Datos del evento" id="seq_Generar_Reporte_Asistencia-msg-3">
+          <mxCell edge="1" parent="seq_Generar_Reporte_Asistencia-1" source="seq_Generar_Reporte_Asistencia-pl-3" style="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;dashed=1;dashPattern=2 2;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="seq_Generar_Reporte_Asistencia-act-2">
+            <mxGeometry relative="1" x="0" as="geometry">
+              <Array as="points">
+                <mxPoint x="590.375" y="295.73" />
+              </Array>
+              <mxPoint x="677.0" y="295.73" as="sourcePoint" />
+              <mxPoint x="503.75" y="295.73" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="5. Solicitar ingresos registrados con QR" plantUmlId="msg_14" plantUmlBaseStyle="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="5. Solicitar ingresos registrados con QR" id="seq_Generar_Reporte_Asistencia-msg-4">
+          <mxCell edge="1" parent="seq_Generar_Reporte_Asistencia-1" source="seq_Generar_Reporte_Asistencia-act-2" style="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="seq_Generar_Reporte_Asistencia-act-4">
+            <mxGeometry relative="1" x="0" as="geometry">
+              <Array as="points">
+                <mxPoint x="668.875" y="325.04" />
+              </Array>
+              <mxPoint x="503.75" y="325.04" as="sourcePoint" />
+              <mxPoint x="834.0" y="325.04" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="6. Lista de asistencias" plantUmlId="msg_15" plantUmlBaseStyle="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;dashed=1;dashPattern=2 2;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="6. Lista de asistencias" id="seq_Generar_Reporte_Asistencia-msg-5">
+          <mxCell edge="1" parent="seq_Generar_Reporte_Asistencia-1" source="seq_Generar_Reporte_Asistencia-pl-4" style="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;dashed=1;dashPattern=2 2;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="seq_Generar_Reporte_Asistencia-act-2">
+            <mxGeometry relative="1" x="0" as="geometry">
+              <Array as="points">
+                <mxPoint x="668.875" y="354.35" />
+              </Array>
+              <mxPoint x="834.0" y="354.35" as="sourcePoint" />
+              <mxPoint x="503.75" y="354.35" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="8. Generar reporte de asistencia" plantUmlId="msg_17" plantUmlBaseStyle="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="8. Generar reporte de asistencia" id="seq_Generar_Reporte_Asistencia-msg-7">
+          <mxCell edge="1" parent="seq_Generar_Reporte_Asistencia-1" source="seq_Generar_Reporte_Asistencia-act-2" style="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="seq_Generar_Reporte_Asistencia-act-5">
+            <mxGeometry relative="1" x="0" as="geometry">
+              <Array as="points">
+                <mxPoint x="764.0" y="425.97" />
+              </Array>
+              <mxPoint x="503.75" y="425.97" as="sourcePoint" />
+              <mxPoint x="1024.25" y="425.97" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="9. Reporte generado" plantUmlId="msg_18" plantUmlBaseStyle="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;dashed=1;dashPattern=2 2;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="9. Reporte generado" id="seq_Generar_Reporte_Asistencia-msg-8">
+          <mxCell edge="1" parent="seq_Generar_Reporte_Asistencia-1" source="seq_Generar_Reporte_Asistencia-act-5" style="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;dashed=1;dashPattern=2 2;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="seq_Generar_Reporte_Asistencia-act-2">
+            <mxGeometry relative="1" x="0" as="geometry">
+              <Array as="points">
+                <mxPoint x="764.0" y="455.28" />
+              </Array>
+              <mxPoint x="1024.25" y="455.28" as="sourcePoint" />
+              <mxPoint x="503.75" y="455.28" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="10. Reporte generado" plantUmlId="msg_19" plantUmlBaseStyle="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;dashed=1;dashPattern=2 2;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="10. Reporte generado" id="seq_Generar_Reporte_Asistencia-msg-9">
+          <mxCell edge="1" parent="seq_Generar_Reporte_Asistencia-1" source="seq_Generar_Reporte_Asistencia-pl-2" style="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;dashed=1;dashPattern=2 2;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="seq_Generar_Reporte_Asistencia-act-1">
+            <mxGeometry relative="1" x="0" as="geometry">
+              <Array as="points">
+                <mxPoint x="386.75" y="484.59" />
+              </Array>
+              <mxPoint x="493.75" y="484.59" as="sourcePoint" />
+              <mxPoint x="279.75" y="484.59" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="11. Mostrar reporte de asistencia" plantUmlId="msg_20" plantUmlBaseStyle="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;dashed=1;dashPattern=2 2;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="11. Mostrar reporte de asistencia" id="seq_Generar_Reporte_Asistencia-msg-10">
+          <mxCell edge="1" parent="seq_Generar_Reporte_Asistencia-1" source="seq_Generar_Reporte_Asistencia-pl-5" style="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;dashed=1;dashPattern=2 2;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="seq_Generar_Reporte_Asistencia-pl-0">
+            <mxGeometry relative="1" x="0" as="geometry">
+              <Array as="points">
+                <mxPoint x="551.25" y="513.9" />
+              </Array>
+              <mxPoint x="1024.25" y="513.9" as="sourcePoint" />
+              <mxPoint x="78.25" y="513.9" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <mxCell id="seq_Generar_Reporte_Asistencia-note" parent="seq_Generar_Reporte_Asistencia-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;Reporte de asistencia:&lt;/b&gt; El organizador solicita el listado de ingresos registrados con QR válido (estudiante, evento y fecha/hora de ingreso)." vertex="1">
+          <mxGeometry height="40" width="1115.0" x="20" y="574.39" as="geometry" />
+        </mxCell>
+        <mxCell id="seq_Generar_Reporte_Asistencia-border" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1">
+          <mxGeometry height="531.39" width="1145.0" x="10" y="90" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,132 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="seq-Gestionar_Evento">
+    <mxGraphModel dx="842" dy="550" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <UserObject label="" plantUmlData='{"data": "@startuml\nhide footbox\nactor Organizador as Organizador\nboundary InterfazOrganizador as InterfazOrganizador\nentity Evento as Evento\n\nOrganizador -&gt; InterfazOrganizador : 1. Ingresar nueva descripci\u00f3n del evento\nInterfazOrganizador -&gt; Evento : 2. Actualizar texto, fecha y hora\nEvento -&gt; Evento : 3. Guardar fecha y hora de modificaci\u00f3n\nEvento --&gt; InterfazOrganizador : 4. Confirmar actualizaci\u00f3n\nInterfazOrganizador --&gt; Organizador : 5. Mostrar evento actualizado\n@enduml", "config": null}' id="seq_Gestionar_Evento-1">
+          <mxCell connectable="0" parent="1" style="group;transparentBounds=1;editIcon=1;lockedGroup=0;groupPadding=10;" vertex="1">
+            <mxGeometry as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="seq_Gestionar_Evento-title" parent="seq_Gestionar_Evento-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;CdU 6 · Gestionar un evento (Diagrama de secuencia)&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="320" x="20" y="15" as="geometry" />
+        </mxCell>
+        <UserObject label="" plantUmlId="pl_5" plantUmlBaseStyle="shape=umlLifeline;perimeter=lifelinePerimeter;participant=headless;size=75.49;lifelineMirror=1;dashPattern=5 5;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&amp;quot;edgeStyle&amp;quot;:&amp;quot;sequenceEdgeStyle&amp;quot;,&amp;quot;libavoidRouting&amp;quot;:0,&amp;quot;curved&amp;quot;:0,&amp;quot;rounded&amp;quot;:0};fillColor=none;strokeColor=#181818;strokeWidth=0.5;" plantUmlBaseValue="" id="seq_Gestionar_Evento-pl-0">
+          <mxCell parent="seq_Gestionar_Evento-1" style="shape=umlLifeline;perimeter=lifelinePerimeter;participant=headless;size=75.49;lifelineMirror=1;dashPattern=5 5;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&amp;quot;edgeStyle&amp;quot;:&amp;quot;sequenceEdgeStyle&amp;quot;,&amp;quot;libavoidRouting&amp;quot;:0,&amp;quot;curved&amp;quot;:0,&amp;quot;rounded&amp;quot;:0};fillColor=none;strokeColor=#181818;strokeWidth=0.5;" vertex="1">
+            <mxGeometry height="330.53" width="106.5" x="20.0" y="100.0" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="act_0" plantUmlBaseStyle='rounded=0;fillColor=#FFFFFF;strokeColor=#181818;strokeWidth=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={"edgeStyle":"sequenceEdgeStyle","libavoidRouting":0,"curved":0,"rounded":0};part=1;' plantUmlBaseValue="" id="seq_Gestionar_Evento-act-0">
+          <mxCell parent="seq_Gestionar_Evento-pl-0" style='rounded=0;fillColor=#FFFFFF;strokeColor=#181818;strokeWidth=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={"edgeStyle":"sequenceEdgeStyle","libavoidRouting":0,"curved":0,"rounded":0};part=1;' vertex="1">
+            <mxGeometry height="130.24" width="10" x="48.25" y="107.8" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Organizador" plantUmlId="p_20" plantUmlBaseStyle="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;spacingTop=-5;fillColor=#E2E2F0;strokeColor=#181818;fontColor=#000000;fontSize=14;html=1;part=1;" plantUmlBaseValue="Organizador" id="seq_Gestionar_Evento-ico-0">
+          <mxCell parent="seq_Gestionar_Evento-pl-0" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;spacingTop=-5;fillColor=#E2E2F0;strokeColor=#181818;fontColor=#000000;fontSize=14;html=1;part=1;" vertex="1">
+            <mxGeometry height="58" width="26" x="40.25" y="0.5" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="pl_6" plantUmlBaseStyle="shape=umlLifeline;perimeter=lifelinePerimeter;participant=headless;size=43.49;lifelineMirror=1;dashPattern=5 5;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&amp;quot;edgeStyle&amp;quot;:&amp;quot;sequenceEdgeStyle&amp;quot;,&amp;quot;libavoidRouting&amp;quot;:0,&amp;quot;curved&amp;quot;:0,&amp;quot;rounded&amp;quot;:0};fillColor=none;strokeColor=#181818;strokeWidth=0.5;" plantUmlBaseValue="" id="seq_Gestionar_Evento-pl-1">
+          <mxCell parent="seq_Gestionar_Evento-1" style="shape=umlLifeline;perimeter=lifelinePerimeter;participant=headless;size=43.49;lifelineMirror=1;dashPattern=5 5;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&amp;quot;edgeStyle&amp;quot;:&amp;quot;sequenceEdgeStyle&amp;quot;,&amp;quot;libavoidRouting&amp;quot;:0,&amp;quot;curved&amp;quot;:0,&amp;quot;rounded&amp;quot;:0};fillColor=none;strokeColor=#181818;strokeWidth=0.5;" vertex="1">
+            <mxGeometry height="298.53" width="166.5" x="191.5" y="132.0" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="act_1" plantUmlBaseStyle='rounded=0;fillColor=#FFFFFF;strokeColor=#181818;strokeWidth=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={"edgeStyle":"sequenceEdgeStyle","libavoidRouting":0,"curved":0,"rounded":0};part=1;' plantUmlBaseValue="" id="seq_Gestionar_Evento-act-1">
+          <mxCell parent="seq_Gestionar_Evento-pl-1" style='rounded=0;fillColor=#FFFFFF;strokeColor=#181818;strokeWidth=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={"edgeStyle":"sequenceEdgeStyle","libavoidRouting":0,"curved":0,"rounded":0};part=1;' vertex="1">
+            <mxGeometry height="130.24" width="10" x="78.25" y="75.8" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="InterfazOrganizador" plantUmlId="p_22" plantUmlBaseStyle="shape=umlBoundary;verticalLabelPosition=bottom;verticalAlign=top;spacingTop=-2.5;fillColor=#E2E2F0;strokeColor=#181818;fontColor=#000000;fontSize=14;html=1;part=1;" plantUmlBaseValue="InterfazOrganizador" id="seq_Gestionar_Evento-ico-1">
+          <mxCell parent="seq_Gestionar_Evento-pl-1" style="shape=umlBoundary;verticalLabelPosition=bottom;verticalAlign=top;spacingTop=-2.5;fillColor=#E2E2F0;strokeColor=#181818;fontColor=#000000;fontSize=14;html=1;part=1;" vertex="1">
+            <mxGeometry height="24" width="41" x="62.75" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="pl_7" plantUmlBaseStyle="shape=umlLifeline;perimeter=lifelinePerimeter;participant=headless;size=43.49;lifelineMirror=1;dashPattern=5 5;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&amp;quot;edgeStyle&amp;quot;:&amp;quot;sequenceEdgeStyle&amp;quot;,&amp;quot;libavoidRouting&amp;quot;:0,&amp;quot;curved&amp;quot;:0,&amp;quot;rounded&amp;quot;:0};fillColor=none;strokeColor=#181818;strokeWidth=0.5;" plantUmlBaseValue="" id="seq_Gestionar_Evento-pl-2">
+          <mxCell parent="seq_Gestionar_Evento-1" style="shape=umlLifeline;perimeter=lifelinePerimeter;participant=headless;size=43.49;lifelineMirror=1;dashPattern=5 5;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&amp;quot;edgeStyle&amp;quot;:&amp;quot;sequenceEdgeStyle&amp;quot;,&amp;quot;libavoidRouting&amp;quot;:0,&amp;quot;curved&amp;quot;:0,&amp;quot;rounded&amp;quot;:0};fillColor=none;strokeColor=#181818;strokeWidth=0.5;" vertex="1">
+            <mxGeometry height="298.53" width="85.0" x="423.0" y="132.0" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="act_2" plantUmlBaseStyle='rounded=0;fillColor=#FFFFFF;strokeColor=#181818;strokeWidth=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={"edgeStyle":"sequenceEdgeStyle","libavoidRouting":0,"curved":0,"rounded":0};part=1;' plantUmlBaseValue="" id="seq_Gestionar_Evento-act-2">
+          <mxCell parent="seq_Gestionar_Evento-pl-2" style='rounded=0;fillColor=#FFFFFF;strokeColor=#181818;strokeWidth=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={"edgeStyle":"sequenceEdgeStyle","libavoidRouting":0,"curved":0,"rounded":0};part=1;' vertex="1">
+            <mxGeometry height="71.62" width="10" x="37.5" y="105.11" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Evento" plantUmlId="p_24" plantUmlBaseStyle="ellipse;shape=umlEntity;verticalLabelPosition=bottom;verticalAlign=top;spacingTop=-4.5;fillColor=#E2E2F0;strokeColor=#181818;fontColor=#000000;fontSize=14;html=1;part=1;" plantUmlBaseValue="Evento" id="seq_Gestionar_Evento-ico-2">
+          <mxCell parent="seq_Gestionar_Evento-pl-2" style="ellipse;shape=umlEntity;verticalLabelPosition=bottom;verticalAlign=top;spacingTop=-4.5;fillColor=#E2E2F0;strokeColor=#181818;fontColor=#000000;fontSize=14;html=1;part=1;" vertex="1">
+            <mxGeometry height="26" width="24" x="30.5" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="msg_12" plantUmlBaseStyle="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="" id="seq_Gestionar_Evento-msg-2">
+          <mxCell edge="1" parent="seq_Gestionar_Evento-pl-2" source="seq_Gestionar_Evento-act-2" style="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="seq_Gestionar_Evento-act-2">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="85.5" y="134.42" />
+                <mxPoint x="85.5" y="147.42" />
+              </Array>
+              <mxPoint x="47.5" y="134.42" as="sourcePoint" />
+              <mxPoint x="47.5" y="147.42" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="3. Guardar fecha y hora de modificación" plantUmlId="msglbl_12" plantUmlBaseStyle="text;html=1;fontColor=#000000;fontSize=13;align=left;verticalAlign=middle;" plantUmlBaseValue="3. Guardar fecha y hora de modificación" id="seq_Gestionar_Evento-msglbl-2">
+          <mxCell parent="seq_Gestionar_Evento-msg-2" style="text;html=1;fontColor=#000000;fontSize=12;align=left;verticalAlign=middle;" vertex="1">
+            <mxGeometry height="18.31" relative="1" width="160" x="-1" as="geometry">
+              <mxPoint x="2.0" y="-20.31" as="offset" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="1. Ingresar nueva descripción del evento" plantUmlId="msg_10" plantUmlBaseStyle="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="1. Ingresar nueva descripción del evento" id="seq_Gestionar_Evento-msg-0">
+          <mxCell edge="1" parent="seq_Gestionar_Evento-1" source="seq_Gestionar_Evento-act-0" style="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="seq_Gestionar_Evento-act-1">
+            <mxGeometry relative="1" x="0" as="geometry">
+              <Array as="points">
+                <mxPoint x="174.0" y="207.8" />
+              </Array>
+              <mxPoint x="78.25" y="207.8" as="sourcePoint" />
+              <mxPoint x="269.75" y="207.8" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="2. Actualizar texto, fecha y hora" plantUmlId="msg_11" plantUmlBaseStyle="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="2. Actualizar texto, fecha y hora" id="seq_Gestionar_Evento-msg-1">
+          <mxCell edge="1" parent="seq_Gestionar_Evento-1" source="seq_Gestionar_Evento-act-1" style="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="seq_Gestionar_Evento-act-2">
+            <mxGeometry relative="1" x="0" as="geometry">
+              <Array as="points">
+                <mxPoint x="370.125" y="237.11" />
+              </Array>
+              <mxPoint x="279.75" y="237.11" as="sourcePoint" />
+              <mxPoint x="460.5" y="237.11" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="4. Confirmar actualización" plantUmlId="msg_13" plantUmlBaseStyle="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;dashed=1;dashPattern=2 2;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="4. Confirmar actualización" id="seq_Gestionar_Evento-msg-3">
+          <mxCell edge="1" parent="seq_Gestionar_Evento-1" source="seq_Gestionar_Evento-pl-2" style="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;dashed=1;dashPattern=2 2;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="seq_Gestionar_Evento-act-1">
+            <mxGeometry relative="1" x="0" as="geometry">
+              <Array as="points">
+                <mxPoint x="370.125" y="308.73" />
+              </Array>
+              <mxPoint x="460.5" y="308.73" as="sourcePoint" />
+              <mxPoint x="279.75" y="308.73" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="5. Mostrar evento actualizado" plantUmlId="msg_14" plantUmlBaseStyle="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;dashed=1;dashPattern=2 2;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="5. Mostrar evento actualizado" id="seq_Gestionar_Evento-msg-4">
+          <mxCell edge="1" parent="seq_Gestionar_Evento-1" source="seq_Gestionar_Evento-pl-1" style="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;dashed=1;dashPattern=2 2;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="seq_Gestionar_Evento-pl-0">
+            <mxGeometry relative="1" x="0" as="geometry">
+              <Array as="points">
+                <mxPoint x="174.0" y="338.04" />
+              </Array>
+              <mxPoint x="269.75" y="338.04" as="sourcePoint" />
+              <mxPoint x="78.25" y="338.04" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <mxCell id="seq_Gestionar_Evento-note" parent="seq_Gestionar_Evento-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;Edición de evento (enfoque de Schach):&lt;/b&gt; Operación directa sin clase control adicional; actualiza el texto y registra fecha y hora de modificación." vertex="1">
+          <mxGeometry height="40" width="520.0" x="20" y="398.53" as="geometry" />
+        </mxCell>
+        <mxCell id="seq_Gestionar_Evento-border" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1">
+          <mxGeometry height="355.53" width="548.0" x="10" y="90" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,74 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="gujRXwdyhSgbg_5FurvQ">
+    <mxGraphModel dx="842" dy="507" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ent_evento" parent="1" style="ellipse;shape=umlEntity;whiteSpace=wrap;html=1;verticalAlign=top;verticalLabelPosition=bottom;" value="&lt;b&gt;&amp;lt;&amp;lt;entidad&amp;gt;&amp;gt;&lt;/b&gt;&lt;br&gt;Evento" vertex="1">
+          <mxGeometry height="60" width="60" x="520" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="ent_res" parent="1" style="ellipse;shape=umlEntity;whiteSpace=wrap;html=1;verticalAlign=top;verticalLabelPosition=bottom;" value="&lt;b&gt;&amp;lt;&amp;lt;entidad&amp;gt;&amp;gt;&lt;/b&gt;&lt;br&gt;Reserva" vertex="1">
+          <mxGeometry height="60" width="60" x="240" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="ent_asist" parent="1" style="ellipse;shape=umlEntity;whiteSpace=wrap;html=1;verticalAlign=top;verticalLabelPosition=bottom;" value="&lt;b&gt;&amp;lt;&amp;lt;entidad&amp;gt;&amp;gt;&lt;/b&gt;&lt;br&gt;Asistencia" vertex="1">
+          <mxGeometry height="60" width="60" x="800" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="ent_estud" parent="1" style="ellipse;shape=umlEntity;whiteSpace=wrap;html=1;verticalAlign=top;verticalLabelPosition=bottom;" value="&lt;b&gt;&amp;lt;&amp;lt;entidad&amp;gt;&amp;gt;&lt;/b&gt;&lt;br&gt;Estudiante" vertex="1">
+          <mxGeometry height="60" width="60" x="520" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_ev_res" edge="1" parent="1" source="ent_evento" style="endArrow=none;html=1;strokeWidth=2;" target="ent_res">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SiusAIJxZx4bdqFrbA5I-3" connectable="0" parent="rel_ev_res" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;" value="n" vertex="1">
+          <mxGeometry relative="1" x="-0.8211" y="3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SiusAIJxZx4bdqFrbA5I-4" connectable="0" parent="rel_ev_res" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;" value="m" vertex="1">
+          <mxGeometry relative="1" x="0.7763" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel_ev_asist" edge="1" parent="1" source="ent_evento" style="endArrow=none;html=1;strokeWidth=2;" target="ent_asist">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_ev_asist_n" connectable="0" parent="rel_ev_asist" style="edgeLabel;html=1;align=center;verticalAlign=bottom;resizable=0;points=[];fontSize=14;" value="&lt;b&gt;n&lt;/b&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.8" y="-12" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lbl_ev_asist_m" connectable="0" parent="rel_ev_asist" style="edgeLabel;html=1;align=center;verticalAlign=bottom;resizable=0;points=[];fontSize=14;" value="&lt;b&gt;m&lt;/b&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.8" y="-12" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel_est_res" edge="1" parent="1" source="ent_estud" style="endArrow=none;html=1;strokeWidth=2;" target="ent_res">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SiusAIJxZx4bdqFrbA5I-5" connectable="0" parent="rel_est_res" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;" value="n" vertex="1">
+          <mxGeometry relative="1" x="-0.7732" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SiusAIJxZx4bdqFrbA5I-6" connectable="0" parent="rel_est_res" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;" value="m" vertex="1">
+          <mxGeometry relative="1" x="0.6938" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel_est_asist" edge="1" parent="1" source="ent_estud" style="endArrow=none;html=1;strokeWidth=2;" target="ent_asist">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_est_asist_n1" connectable="0" parent="rel_est_asist" style="edgeLabel;html=1;align=center;verticalAlign=top;resizable=0;points=[];fontSize=14;" value="&lt;b&gt;n&lt;/b&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.8" y="12" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lbl_est_asist_n2" connectable="0" parent="rel_est_asist" style="edgeLabel;html=1;align=center;verticalAlign=top;resizable=0;points=[];fontSize=14;" value="&lt;b&gt;n&lt;/b&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.8" y="12" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

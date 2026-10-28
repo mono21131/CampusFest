@@ -1,0 +1,254 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="seq-Generar_Reporte_Reservas">
+    <mxGraphModel dx="842" dy="550" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <UserObject label="" plantUmlData='{"data": "@startuml\nhide footbox\nactor Organizador as Organizador\nboundary PantallaEventos as PantallaEventos\ncontrol Gesti\u00f3nReserva as GestionReserva\nentity Evento as Evento\nentity Reserva as Reserva\nboundary ReporteReservas as ReporteReservas\n\nOrganizador -&gt; PantallaEventos : 1. Seleccionar evento\nPantallaEventos -&gt; GestionReserva : 2. generarReporte(evento)\nGestionReserva -&gt; Evento : 3. Solicitar informaci\u00f3n del evento\nEvento --&gt; GestionReserva : 4. Datos del evento\nGestionReserva -&gt; Reserva : 5. Solicitar informaci\u00f3n de reservas\nReserva --&gt; GestionReserva : 6. Lista de reservas\nGestionReserva -&gt; GestionReserva : 7. Calcular listado de reservas\nGestionReserva -&gt; ReporteReservas : 8. Generar reporte de reservas\nReporteReservas --&gt; GestionReserva : 9. Reporte generado\nGestionReserva --&gt; PantallaEventos : 10. Reporte generado\nPantallaEventos --&gt; Organizador : 11. OK\nReporteReservas --&gt; Organizador : 12. Mostrar reporte de reservas\n@enduml", "config": null}' id="seq_Generar_Reporte_Reservas-1">
+          <mxCell connectable="0" parent="1" style="group;transparentBounds=1;editIcon=1;lockedGroup=0;groupPadding=10;" vertex="1">
+            <mxGeometry as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="seq_Generar_Reporte_Reservas-title" parent="seq_Generar_Reporte_Reservas-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;CdU 7 · Generar reporte de reservas (Diagrama de secuencia)&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="320" x="20" y="15" as="geometry" />
+        </mxCell>
+        <UserObject label="" plantUmlId="pl_5" plantUmlBaseStyle="shape=umlLifeline;perimeter=lifelinePerimeter;participant=headless;size=75.49;lifelineMirror=1;dashPattern=5 5;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&amp;quot;edgeStyle&amp;quot;:&amp;quot;sequenceEdgeStyle&amp;quot;,&amp;quot;libavoidRouting&amp;quot;:0,&amp;quot;curved&amp;quot;:0,&amp;quot;rounded&amp;quot;:0};fillColor=none;strokeColor=#181818;strokeWidth=0.5;" plantUmlBaseValue="" id="seq_Generar_Reporte_Reservas-pl-0">
+          <mxCell parent="seq_Generar_Reporte_Reservas-1" style="shape=umlLifeline;perimeter=lifelinePerimeter;participant=headless;size=75.49;lifelineMirror=1;dashPattern=5 5;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&amp;quot;edgeStyle&amp;quot;:&amp;quot;sequenceEdgeStyle&amp;quot;,&amp;quot;libavoidRouting&amp;quot;:0,&amp;quot;curved&amp;quot;:0,&amp;quot;rounded&amp;quot;:0};fillColor=none;strokeColor=#181818;strokeWidth=0.5;" vertex="1">
+            <mxGeometry height="535.7" width="106.5" x="20.0" y="100.0" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="act_0" plantUmlBaseStyle='rounded=0;fillColor=#FFFFFF;strokeColor=#181818;strokeWidth=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={"edgeStyle":"sequenceEdgeStyle","libavoidRouting":0,"curved":0,"rounded":0};part=1;' plantUmlBaseValue="" id="seq_Generar_Reporte_Reservas-act-0">
+          <mxCell parent="seq_Generar_Reporte_Reservas-pl-0" style='rounded=0;fillColor=#FFFFFF;strokeColor=#181818;strokeWidth=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={"edgeStyle":"sequenceEdgeStyle","libavoidRouting":0,"curved":0,"rounded":0};part=1;' vertex="1">
+            <mxGeometry height="335.41" width="10" x="48.25" y="107.8" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Organizador" plantUmlId="p_20" plantUmlBaseStyle="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;spacingTop=-5;fillColor=#E2E2F0;strokeColor=#181818;fontColor=#000000;fontSize=14;html=1;part=1;" plantUmlBaseValue="Organizador" id="seq_Generar_Reporte_Reservas-ico-0">
+          <mxCell parent="seq_Generar_Reporte_Reservas-pl-0" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;spacingTop=-5;fillColor=#E2E2F0;strokeColor=#181818;fontColor=#000000;fontSize=14;html=1;part=1;" vertex="1">
+            <mxGeometry height="58" width="26" x="40.25" y="0.5" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="pl_6" plantUmlBaseStyle="shape=umlLifeline;perimeter=lifelinePerimeter;participant=headless;size=43.49;lifelineMirror=1;dashPattern=5 5;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&amp;quot;edgeStyle&amp;quot;:&amp;quot;sequenceEdgeStyle&amp;quot;,&amp;quot;libavoidRouting&amp;quot;:0,&amp;quot;curved&amp;quot;:0,&amp;quot;rounded&amp;quot;:0};fillColor=none;strokeColor=#181818;strokeWidth=0.5;" plantUmlBaseValue="" id="seq_Generar_Reporte_Reservas-pl-1">
+          <mxCell parent="seq_Generar_Reporte_Reservas-1" style="shape=umlLifeline;perimeter=lifelinePerimeter;participant=headless;size=43.49;lifelineMirror=1;dashPattern=5 5;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&amp;quot;edgeStyle&amp;quot;:&amp;quot;sequenceEdgeStyle&amp;quot;,&amp;quot;libavoidRouting&amp;quot;:0,&amp;quot;curved&amp;quot;:0,&amp;quot;rounded&amp;quot;:0};fillColor=none;strokeColor=#181818;strokeWidth=0.5;" vertex="1">
+            <mxGeometry height="503.7" width="136.5" x="191.5" y="132.0" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="act_1" plantUmlBaseStyle='rounded=0;fillColor=#FFFFFF;strokeColor=#181818;strokeWidth=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={"edgeStyle":"sequenceEdgeStyle","libavoidRouting":0,"curved":0,"rounded":0};part=1;' plantUmlBaseValue="" id="seq_Generar_Reporte_Reservas-act-1">
+          <mxCell parent="seq_Generar_Reporte_Reservas-pl-1" style='rounded=0;fillColor=#FFFFFF;strokeColor=#181818;strokeWidth=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={"edgeStyle":"sequenceEdgeStyle","libavoidRouting":0,"curved":0,"rounded":0};part=1;' vertex="1">
+            <mxGeometry height="306.1" width="10" x="63.25" y="75.8" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="PantallaEventos" plantUmlId="p_22" plantUmlBaseStyle="shape=umlBoundary;verticalLabelPosition=bottom;verticalAlign=top;spacingTop=-2.5;fillColor=#E2E2F0;strokeColor=#181818;fontColor=#000000;fontSize=14;html=1;part=1;" plantUmlBaseValue="PantallaEventos" id="seq_Generar_Reporte_Reservas-ico-1">
+          <mxCell parent="seq_Generar_Reporte_Reservas-pl-1" style="shape=umlBoundary;verticalLabelPosition=bottom;verticalAlign=top;spacingTop=-2.5;fillColor=#E2E2F0;strokeColor=#181818;fontColor=#000000;fontSize=14;html=1;part=1;" vertex="1">
+            <mxGeometry height="24" width="41" x="47.75" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="pl_7" plantUmlBaseStyle="shape=umlLifeline;perimeter=lifelinePerimeter;participant=headless;size=47.49;lifelineMirror=1;dashPattern=5 5;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&amp;quot;edgeStyle&amp;quot;:&amp;quot;sequenceEdgeStyle&amp;quot;,&amp;quot;libavoidRouting&amp;quot;:0,&amp;quot;curved&amp;quot;:0,&amp;quot;rounded&amp;quot;:0};fillColor=none;strokeColor=#181818;strokeWidth=0.5;" plantUmlBaseValue="" id="seq_Generar_Reporte_Reservas-pl-2">
+          <mxCell parent="seq_Generar_Reporte_Reservas-1" style="shape=umlLifeline;perimeter=lifelinePerimeter;participant=headless;size=47.49;lifelineMirror=1;dashPattern=5 5;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&amp;quot;edgeStyle&amp;quot;:&amp;quot;sequenceEdgeStyle&amp;quot;,&amp;quot;libavoidRouting&amp;quot;:0,&amp;quot;curved&amp;quot;:0,&amp;quot;rounded&amp;quot;:0};fillColor=none;strokeColor=#181818;strokeWidth=0.5;" vertex="1">
+            <mxGeometry height="507.7" width="129.0" x="393.0" y="128.0" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="act_2" plantUmlBaseStyle='rounded=0;fillColor=#FFFFFF;strokeColor=#181818;strokeWidth=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={"edgeStyle":"sequenceEdgeStyle","libavoidRouting":0,"curved":0,"rounded":0};part=1;' plantUmlBaseValue="" id="seq_Generar_Reporte_Reservas-act-2">
+          <mxCell parent="seq_Generar_Reporte_Reservas-pl-2" style='rounded=0;fillColor=#FFFFFF;strokeColor=#181818;strokeWidth=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={"edgeStyle":"sequenceEdgeStyle","libavoidRouting":0,"curved":0,"rounded":0};part=1;' vertex="1">
+            <mxGeometry height="247.48" width="10" x="59.5" y="109.11" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="GestiónReserva" plantUmlId="p_24" plantUmlBaseStyle="ellipse;shape=umlControl;verticalLabelPosition=bottom;verticalAlign=top;spacingTop=-2.5;fillColor=#E2E2F0;strokeColor=#181818;fontColor=#000000;fontSize=14;html=1;part=1;" plantUmlBaseValue="GestiónReserva" id="seq_Generar_Reporte_Reservas-ico-2">
+          <mxCell parent="seq_Generar_Reporte_Reservas-pl-2" style="ellipse;shape=umlControl;verticalLabelPosition=bottom;verticalAlign=top;spacingTop=-2.5;fillColor=#E2E2F0;strokeColor=#181818;fontColor=#000000;fontSize=14;html=1;part=1;" vertex="1">
+            <mxGeometry height="28" width="24" x="52.5" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="msg_16" plantUmlBaseStyle="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="" id="seq_Generar_Reporte_Reservas-msg-6">
+          <mxCell edge="1" parent="seq_Generar_Reporte_Reservas-pl-2" source="seq_Generar_Reporte_Reservas-act-2" style="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="seq_Generar_Reporte_Reservas-act-2">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="107.5" y="255.66" />
+                <mxPoint x="107.5" y="268.66" />
+              </Array>
+              <mxPoint x="69.5" y="255.66" as="sourcePoint" />
+              <mxPoint x="69.5" y="268.66" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="7. Calcular listado de reservas" plantUmlId="msglbl_16" plantUmlBaseStyle="text;html=1;fontColor=#000000;fontSize=13;align=left;verticalAlign=middle;" plantUmlBaseValue="7. Calcular listado de reservas" id="seq_Generar_Reporte_Reservas-msglbl-6">
+          <mxCell parent="seq_Generar_Reporte_Reservas-msg-6" style="text;html=1;fontColor=#000000;fontSize=12;align=left;verticalAlign=middle;" vertex="1">
+            <mxGeometry height="18.31" relative="1" width="160" x="-1" as="geometry">
+              <mxPoint x="2.0" y="-20.31" as="offset" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="pl_8" plantUmlBaseStyle="shape=umlLifeline;perimeter=lifelinePerimeter;participant=headless;size=43.49;lifelineMirror=1;dashPattern=5 5;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&amp;quot;edgeStyle&amp;quot;:&amp;quot;sequenceEdgeStyle&amp;quot;,&amp;quot;libavoidRouting&amp;quot;:0,&amp;quot;curved&amp;quot;:0,&amp;quot;rounded&amp;quot;:0};fillColor=none;strokeColor=#181818;strokeWidth=0.5;" plantUmlBaseValue="" id="seq_Generar_Reporte_Reservas-pl-3">
+          <mxCell parent="seq_Generar_Reporte_Reservas-1" style="shape=umlLifeline;perimeter=lifelinePerimeter;participant=headless;size=43.49;lifelineMirror=1;dashPattern=5 5;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&amp;quot;edgeStyle&amp;quot;:&amp;quot;sequenceEdgeStyle&amp;quot;,&amp;quot;libavoidRouting&amp;quot;:0,&amp;quot;curved&amp;quot;:0,&amp;quot;rounded&amp;quot;:0};fillColor=none;strokeColor=#181818;strokeWidth=0.5;" vertex="1">
+            <mxGeometry height="503.7" width="85.0" x="587.0" y="132.0" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="act_3" plantUmlBaseStyle='rounded=0;fillColor=#FFFFFF;strokeColor=#181818;strokeWidth=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={"edgeStyle":"sequenceEdgeStyle","libavoidRouting":0,"curved":0,"rounded":0};part=1;' plantUmlBaseValue="" id="seq_Generar_Reporte_Reservas-act-3">
+          <mxCell parent="seq_Generar_Reporte_Reservas-pl-3" style='rounded=0;fillColor=#FFFFFF;strokeColor=#181818;strokeWidth=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={"edgeStyle":"sequenceEdgeStyle","libavoidRouting":0,"curved":0,"rounded":0};part=1;' vertex="1">
+            <mxGeometry height="29.31" width="10" x="37.5" y="134.42" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Evento" plantUmlId="p_26" plantUmlBaseStyle="ellipse;shape=umlEntity;verticalLabelPosition=bottom;verticalAlign=top;spacingTop=-4.5;fillColor=#E2E2F0;strokeColor=#181818;fontColor=#000000;fontSize=14;html=1;part=1;" plantUmlBaseValue="Evento" id="seq_Generar_Reporte_Reservas-ico-3">
+          <mxCell parent="seq_Generar_Reporte_Reservas-pl-3" style="ellipse;shape=umlEntity;verticalLabelPosition=bottom;verticalAlign=top;spacingTop=-4.5;fillColor=#E2E2F0;strokeColor=#181818;fontColor=#000000;fontSize=14;html=1;part=1;" vertex="1">
+            <mxGeometry height="26" width="24" x="30.5" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="pl_9" plantUmlBaseStyle="shape=umlLifeline;perimeter=lifelinePerimeter;participant=headless;size=43.49;lifelineMirror=1;dashPattern=5 5;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&amp;quot;edgeStyle&amp;quot;:&amp;quot;sequenceEdgeStyle&amp;quot;,&amp;quot;libavoidRouting&amp;quot;:0,&amp;quot;curved&amp;quot;:0,&amp;quot;rounded&amp;quot;:0};fillColor=none;strokeColor=#181818;strokeWidth=0.5;" plantUmlBaseValue="" id="seq_Generar_Reporte_Reservas-pl-4">
+          <mxCell parent="seq_Generar_Reporte_Reservas-1" style="shape=umlLifeline;perimeter=lifelinePerimeter;participant=headless;size=43.49;lifelineMirror=1;dashPattern=5 5;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&amp;quot;edgeStyle&amp;quot;:&amp;quot;sequenceEdgeStyle&amp;quot;,&amp;quot;libavoidRouting&amp;quot;:0,&amp;quot;curved&amp;quot;:0,&amp;quot;rounded&amp;quot;:0};fillColor=none;strokeColor=#181818;strokeWidth=0.5;" vertex="1">
+            <mxGeometry height="503.7" width="85.0" x="737.0" y="132.0" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="act_4" plantUmlBaseStyle='rounded=0;fillColor=#FFFFFF;strokeColor=#181818;strokeWidth=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={"edgeStyle":"sequenceEdgeStyle","libavoidRouting":0,"curved":0,"rounded":0};part=1;' plantUmlBaseValue="" id="seq_Generar_Reporte_Reservas-act-4">
+          <mxCell parent="seq_Generar_Reporte_Reservas-pl-4" style='rounded=0;fillColor=#FFFFFF;strokeColor=#181818;strokeWidth=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={"edgeStyle":"sequenceEdgeStyle","libavoidRouting":0,"curved":0,"rounded":0};part=1;' vertex="1">
+            <mxGeometry height="29.31" width="10" x="37.5" y="193.04" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Reserva" plantUmlId="p_28" plantUmlBaseStyle="ellipse;shape=umlEntity;verticalLabelPosition=bottom;verticalAlign=top;spacingTop=-4.5;fillColor=#E2E2F0;strokeColor=#181818;fontColor=#000000;fontSize=14;html=1;part=1;" plantUmlBaseValue="Reserva" id="seq_Generar_Reporte_Reservas-ico-4">
+          <mxCell parent="seq_Generar_Reporte_Reservas-pl-4" style="ellipse;shape=umlEntity;verticalLabelPosition=bottom;verticalAlign=top;spacingTop=-4.5;fillColor=#E2E2F0;strokeColor=#181818;fontColor=#000000;fontSize=14;html=1;part=1;" vertex="1">
+            <mxGeometry height="26" width="24" x="30.5" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="pl_10" plantUmlBaseStyle="shape=umlLifeline;perimeter=lifelinePerimeter;participant=headless;size=43.49;lifelineMirror=1;dashPattern=5 5;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&amp;quot;edgeStyle&amp;quot;:&amp;quot;sequenceEdgeStyle&amp;quot;,&amp;quot;libavoidRouting&amp;quot;:0,&amp;quot;curved&amp;quot;:0,&amp;quot;rounded&amp;quot;:0};fillColor=none;strokeColor=#181818;strokeWidth=0.5;" plantUmlBaseValue="" id="seq_Generar_Reporte_Reservas-pl-5">
+          <mxCell parent="seq_Generar_Reporte_Reservas-1" style="shape=umlLifeline;perimeter=lifelinePerimeter;participant=headless;size=43.49;lifelineMirror=1;dashPattern=5 5;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&amp;quot;edgeStyle&amp;quot;:&amp;quot;sequenceEdgeStyle&amp;quot;,&amp;quot;libavoidRouting&amp;quot;:0,&amp;quot;curved&amp;quot;:0,&amp;quot;rounded&amp;quot;:0};fillColor=none;strokeColor=#181818;strokeWidth=0.5;" vertex="1">
+            <mxGeometry height="503.7" width="136.5" x="887.0" y="132.0" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="act_5" plantUmlBaseStyle='rounded=0;fillColor=#FFFFFF;strokeColor=#181818;strokeWidth=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={"edgeStyle":"sequenceEdgeStyle","libavoidRouting":0,"curved":0,"rounded":0};part=1;' plantUmlBaseValue="" id="seq_Generar_Reporte_Reservas-act-5">
+          <mxCell parent="seq_Generar_Reporte_Reservas-pl-5" style='rounded=0;fillColor=#FFFFFF;strokeColor=#181818;strokeWidth=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={"edgeStyle":"sequenceEdgeStyle","libavoidRouting":0,"curved":0,"rounded":0};part=1;' vertex="1">
+            <mxGeometry height="117.24" width="10" x="63.25" y="293.97" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="ReporteReservas" plantUmlId="p_30" plantUmlBaseStyle="shape=umlBoundary;verticalLabelPosition=bottom;verticalAlign=top;spacingTop=-2.5;fillColor=#E2E2F0;strokeColor=#181818;fontColor=#000000;fontSize=14;html=1;part=1;" plantUmlBaseValue="ReporteReservas" id="seq_Generar_Reporte_Reservas-ico-5">
+          <mxCell parent="seq_Generar_Reporte_Reservas-pl-5" style="shape=umlBoundary;verticalLabelPosition=bottom;verticalAlign=top;spacingTop=-2.5;fillColor=#E2E2F0;strokeColor=#181818;fontColor=#000000;fontSize=14;html=1;part=1;" vertex="1">
+            <mxGeometry height="24" width="41" x="47.75" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="1. Seleccionar evento" plantUmlId="msg_10" plantUmlBaseStyle="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="1. Seleccionar evento" id="seq_Generar_Reporte_Reservas-msg-0">
+          <mxCell edge="1" parent="seq_Generar_Reporte_Reservas-1" source="seq_Generar_Reporte_Reservas-act-0" style="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="seq_Generar_Reporte_Reservas-act-1">
+            <mxGeometry relative="1" x="0" as="geometry">
+              <Array as="points">
+                <mxPoint x="166.5" y="207.8" />
+              </Array>
+              <mxPoint x="78.25" y="207.8" as="sourcePoint" />
+              <mxPoint x="254.75" y="207.8" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="2. generarReporte(evento)" plantUmlId="msg_11" plantUmlBaseStyle="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="2. generarReporte(evento)" id="seq_Generar_Reporte_Reservas-msg-1">
+          <mxCell edge="1" parent="seq_Generar_Reporte_Reservas-1" source="seq_Generar_Reporte_Reservas-act-1" style="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="seq_Generar_Reporte_Reservas-act-2">
+            <mxGeometry relative="1" x="0" as="geometry">
+              <Array as="points">
+                <mxPoint x="358.625" y="237.11" />
+              </Array>
+              <mxPoint x="264.75" y="237.11" as="sourcePoint" />
+              <mxPoint x="452.5" y="237.11" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="3. Solicitar información del evento" plantUmlId="msg_12" plantUmlBaseStyle="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="3. Solicitar información del evento" id="seq_Generar_Reporte_Reservas-msg-2">
+          <mxCell edge="1" parent="seq_Generar_Reporte_Reservas-1" source="seq_Generar_Reporte_Reservas-act-2" style="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="seq_Generar_Reporte_Reservas-act-3">
+            <mxGeometry relative="1" x="0" as="geometry">
+              <Array as="points">
+                <mxPoint x="543.5" y="266.42" />
+              </Array>
+              <mxPoint x="462.5" y="266.42" as="sourcePoint" />
+              <mxPoint x="624.5" y="266.42" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="4. Datos del evento" plantUmlId="msg_13" plantUmlBaseStyle="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;dashed=1;dashPattern=2 2;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="4. Datos del evento" id="seq_Generar_Reporte_Reservas-msg-3">
+          <mxCell edge="1" parent="seq_Generar_Reporte_Reservas-1" source="seq_Generar_Reporte_Reservas-pl-3" style="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;dashed=1;dashPattern=2 2;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="seq_Generar_Reporte_Reservas-act-2">
+            <mxGeometry relative="1" x="0" as="geometry">
+              <Array as="points">
+                <mxPoint x="543.5" y="295.73" />
+              </Array>
+              <mxPoint x="624.5" y="295.73" as="sourcePoint" />
+              <mxPoint x="462.5" y="295.73" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="5. Solicitar información de reservas" plantUmlId="msg_14" plantUmlBaseStyle="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="5. Solicitar información de reservas" id="seq_Generar_Reporte_Reservas-msg-4">
+          <mxCell edge="1" parent="seq_Generar_Reporte_Reservas-1" source="seq_Generar_Reporte_Reservas-act-2" style="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="seq_Generar_Reporte_Reservas-act-4">
+            <mxGeometry relative="1" x="0" as="geometry">
+              <Array as="points">
+                <mxPoint x="618.5" y="325.04" />
+              </Array>
+              <mxPoint x="462.5" y="325.04" as="sourcePoint" />
+              <mxPoint x="774.5" y="325.04" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="6. Lista de reservas" plantUmlId="msg_15" plantUmlBaseStyle="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;dashed=1;dashPattern=2 2;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="6. Lista de reservas" id="seq_Generar_Reporte_Reservas-msg-5">
+          <mxCell edge="1" parent="seq_Generar_Reporte_Reservas-1" source="seq_Generar_Reporte_Reservas-pl-4" style="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;dashed=1;dashPattern=2 2;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="seq_Generar_Reporte_Reservas-act-2">
+            <mxGeometry relative="1" x="0" as="geometry">
+              <Array as="points">
+                <mxPoint x="618.5" y="354.35" />
+              </Array>
+              <mxPoint x="774.5" y="354.35" as="sourcePoint" />
+              <mxPoint x="462.5" y="354.35" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="8. Generar reporte de reservas" plantUmlId="msg_17" plantUmlBaseStyle="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="8. Generar reporte de reservas" id="seq_Generar_Reporte_Reservas-msg-7">
+          <mxCell edge="1" parent="seq_Generar_Reporte_Reservas-1" source="seq_Generar_Reporte_Reservas-act-2" style="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="seq_Generar_Reporte_Reservas-act-5">
+            <mxGeometry relative="1" x="0" as="geometry">
+              <Array as="points">
+                <mxPoint x="706.375" y="425.97" />
+              </Array>
+              <mxPoint x="462.5" y="425.97" as="sourcePoint" />
+              <mxPoint x="950.25" y="425.97" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="9. Reporte generado" plantUmlId="msg_18" plantUmlBaseStyle="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;dashed=1;dashPattern=2 2;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="9. Reporte generado" id="seq_Generar_Reporte_Reservas-msg-8">
+          <mxCell edge="1" parent="seq_Generar_Reporte_Reservas-1" source="seq_Generar_Reporte_Reservas-act-5" style="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;dashed=1;dashPattern=2 2;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="seq_Generar_Reporte_Reservas-act-2">
+            <mxGeometry relative="1" x="0" as="geometry">
+              <Array as="points">
+                <mxPoint x="706.375" y="455.28" />
+              </Array>
+              <mxPoint x="950.25" y="455.28" as="sourcePoint" />
+              <mxPoint x="462.5" y="455.28" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="10. Reporte generado" plantUmlId="msg_19" plantUmlBaseStyle="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;dashed=1;dashPattern=2 2;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="10. Reporte generado" id="seq_Generar_Reporte_Reservas-msg-9">
+          <mxCell edge="1" parent="seq_Generar_Reporte_Reservas-1" source="seq_Generar_Reporte_Reservas-pl-2" style="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;dashed=1;dashPattern=2 2;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="seq_Generar_Reporte_Reservas-act-1">
+            <mxGeometry relative="1" x="0" as="geometry">
+              <Array as="points">
+                <mxPoint x="358.625" y="484.59" />
+              </Array>
+              <mxPoint x="452.5" y="484.59" as="sourcePoint" />
+              <mxPoint x="264.75" y="484.59" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="11. OK" plantUmlId="msg_20" plantUmlBaseStyle="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;dashed=1;dashPattern=2 2;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="11. OK" id="seq_Generar_Reporte_Reservas-msg-10">
+          <mxCell edge="1" parent="seq_Generar_Reporte_Reservas-1" source="seq_Generar_Reporte_Reservas-pl-1" style="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;dashed=1;dashPattern=2 2;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="seq_Generar_Reporte_Reservas-act-0">
+            <mxGeometry relative="1" x="0" as="geometry">
+              <Array as="points">
+                <mxPoint x="166.5" y="513.9" />
+              </Array>
+              <mxPoint x="254.75" y="513.9" as="sourcePoint" />
+              <mxPoint x="78.25" y="513.9" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="12. Mostrar reporte de reservas" plantUmlId="msg_21" plantUmlBaseStyle="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;dashed=1;dashPattern=2 2;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="12. Mostrar reporte de reservas" id="seq_Generar_Reporte_Reservas-msg-11">
+          <mxCell edge="1" parent="seq_Generar_Reporte_Reservas-1" source="seq_Generar_Reporte_Reservas-pl-5" style="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;dashed=1;dashPattern=2 2;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="seq_Generar_Reporte_Reservas-pl-0">
+            <mxGeometry relative="1" x="0" as="geometry">
+              <Array as="points">
+                <mxPoint x="514.25" y="543.21" />
+              </Array>
+              <mxPoint x="950.25" y="543.21" as="sourcePoint" />
+              <mxPoint x="78.25" y="543.21" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <mxCell id="seq_Generar_Reporte_Reservas-note" parent="seq_Generar_Reporte_Reservas-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;Reporte de reservas (RETO 7):&lt;/b&gt; El organizador obtiene el listado de reservas del evento (ID, evento, estudiante y estado)." vertex="1">
+          <mxGeometry height="40" width="1033.5" x="20" y="603.7" as="geometry" />
+        </mxCell>
+        <mxCell id="seq_Generar_Reporte_Reservas-border" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1">
+          <mxGeometry height="560.7" width="1063.5" x="10" y="90" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

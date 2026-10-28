@@ -1,0 +1,191 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="-l9O4NBb03dF2zJx8mOx">
+    <mxGraphModel dx="1245" dy="1003" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="titulo" parent="1" style="text;html=1;fontSize=22;fontStyle=1;align=left;" value="RETO 7 - Un caso de uso, dos escenarios" vertex="1">
+          <mxGeometry height="30" width="200" x="40" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="actor" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontSize=14;" value="Organizador" vertex="1">
+          <mxGeometry height="60" width="30" x="50" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="pantalla" parent="1" style="shape=umlBoundary;whiteSpace=wrap;html=1;verticalLabelPosition=bottom;verticalAlign=top;fontSize=14;" value="Pantalla Eventos" vertex="1">
+          <mxGeometry height="40" width="50" x="270" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="gestion" parent="1" style="shape=umlControl;whiteSpace=wrap;html=1;verticalLabelPosition=bottom;verticalAlign=top;fontSize=14;" value="Gestión Reserva" vertex="1">
+          <mxGeometry height="60" width="65" x="550" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="eventoR" parent="1" style="shape=umlEntity;whiteSpace=wrap;html=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;fontSize=14;" value="Evento" vertex="1">
+          <mxGeometry height="45" width="40" x="850" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="reserva" parent="1" style="shape=umlEntity;whiteSpace=wrap;html=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;fontSize=14;" value="Reserva" vertex="1">
+          <mxGeometry height="45" width="40" x="850" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="reporte" parent="1" style="shape=umlBoundary;whiteSpace=wrap;html=1;verticalLabelPosition=bottom;verticalAlign=top;fontSize=14;" value="Reporte Reservas" vertex="1">
+          <mxGeometry height="40" width="50" x="290" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="l1" edge="1" parent="1" style="endArrow=none;html=1;strokeWidth=1.5;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="85" y="210" as="sourcePoint" />
+            <mxPoint x="275" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l2" edge="1" parent="1" style="endArrow=none;html=1;strokeWidth=1.5;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="320" y="210" as="sourcePoint" />
+            <mxPoint x="550" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l4" edge="1" parent="1" style="endArrow=none;html=1;strokeWidth=1.5;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="610" y="195" as="sourcePoint" />
+            <mxPoint x="850" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l5" edge="1" parent="1" style="endArrow=none;html=1;strokeWidth=1.5;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="548" y="230" as="sourcePoint" />
+            <mxPoint x="340" y="375" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l6" edge="1" parent="1" style="endArrow=none;html=1;strokeWidth=1.5;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="290" y="380" as="sourcePoint" />
+            <mxPoint x="85" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l7" edge="1" parent="1" style="endArrow=none;html=1;strokeWidth=2;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="870" y="135" as="sourcePoint" />
+            <mxPoint x="870" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a1" edge="1" parent="1" style="endArrow=block;html=1;strokeWidth=1.5;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="140" y="195" as="sourcePoint" />
+            <mxPoint x="240" y="195" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a11a" edge="1" parent="1" style="endArrow=block;html=1;strokeWidth=1.5;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="240" y="225" as="sourcePoint" />
+            <mxPoint x="140" y="225" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a2" edge="1" parent="1" style="endArrow=block;html=1;strokeWidth=1.5;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="195" as="sourcePoint" />
+            <mxPoint x="510" y="195" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a10" edge="1" parent="1" style="endArrow=block;html=1;strokeWidth=1.5;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="510" y="225" as="sourcePoint" />
+            <mxPoint x="350" y="225" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a3" edge="1" parent="1" style="endArrow=block;html=1;strokeWidth=1.5;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="655" y="170" as="sourcePoint" />
+            <mxPoint x="799" y="125" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a4" edge="1" parent="1" style="endArrow=diamond;html=1;strokeWidth=1.5;endFill=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="805" y="145" as="sourcePoint" />
+            <mxPoint x="661" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a7" edge="1" parent="1" style="endArrow=block;html=1;strokeWidth=1.5;rounded=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="615" y="319" />
+              <mxPoint x="555" y="319" />
+            </Array>
+            <mxPoint x="615" y="279" as="sourcePoint" />
+            <mxPoint x="555" y="279" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a9" edge="1" parent="1" style="endArrow=block;html=1;strokeWidth=1.5;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="386" y="331" as="sourcePoint" />
+            <mxPoint x="490" y="258" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a8" edge="1" parent="1" style="endArrow=block;html=1;strokeWidth=1.5;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="502" y="274" as="sourcePoint" />
+            <mxPoint x="398" y="347" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a11b" edge="1" parent="1" style="endArrow=block;html=1;strokeWidth=1.5;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="234" y="327" as="sourcePoint" />
+            <mxPoint x="152" y="267" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t1" parent="1" style="text;html=1;fontSize=14;align=center;" value="1." vertex="1">
+          <mxGeometry height="24" width="40" x="170" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="t11a" parent="1" style="text;html=1;fontSize=14;align=center;" value="11.a" vertex="1">
+          <mxGeometry height="24" width="40" x="160" y="227" as="geometry" />
+        </mxCell>
+        <mxCell id="t2" parent="1" style="text;html=1;fontSize=14;align=center;" value="2. generarReporte(evento)" vertex="1">
+          <mxGeometry height="24" width="190" x="340" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="t10" parent="1" style="text;html=1;fontSize=14;align=center;" value="10." vertex="1">
+          <mxGeometry height="24" width="40" x="410" y="227" as="geometry" />
+        </mxCell>
+        <mxCell id="t3" parent="1" style="text;html=1;fontSize=14;align=center;" value="3." vertex="1">
+          <mxGeometry height="24" width="40" x="680" y="125" as="geometry" />
+        </mxCell>
+        <mxCell id="t4" parent="1" style="text;html=1;fontSize=14;align=center;" value="4." vertex="1">
+          <mxGeometry height="24" width="40" x="725" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="t7" parent="1" style="text;html=1;fontSize=14;align=center;" value="7." vertex="1">
+          <mxGeometry height="24" width="40" x="565" y="322" as="geometry" />
+        </mxCell>
+        <mxCell id="t8" parent="1" style="text;html=1;fontSize=14;align=center;rotation=-30;" value="8." vertex="1">
+          <mxGeometry height="24" width="40" x="440" y="309" as="geometry" />
+        </mxCell>
+        <mxCell id="t9" parent="1" style="text;html=1;fontSize=14;align=center;" value="9." vertex="1">
+          <mxGeometry height="24" width="40" x="375" y="285" as="geometry" />
+        </mxCell>
+        <mxCell id="t11b" parent="1" style="text;html=1;fontSize=14;align=center;" value="11.b" vertex="1">
+          <mxGeometry height="24" width="40" x="160" y="255" as="geometry" />
+        </mxCell>
+        <mxCell id="mUKOU2DwEa8Km2_gQadQ-32" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;li style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;p id=&quot;p-rc_c7e92bf12b866dd6-20&quot; style=&quot;text-align: left; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;span style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;1. El organizador selecciona evento&lt;/span&gt;&lt;span class=&quot;&quot; style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;sup class=&quot;superscript&quot; style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important; font-size: 16px !important; background-color: transparent !important;&quot;&gt;&lt;/sup&gt;&lt;/span&gt;&lt;span style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;.&lt;/span&gt;   &lt;/p&gt;&lt;/li&gt;&lt;li style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;p id=&quot;p-rc_c7e92bf12b866dd6-21&quot; style=&quot;text-align: left; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;span style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;2. Solicitar lista de reservas de un evento&lt;/span&gt;&lt;span class=&quot;&quot; style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;sup class=&quot;superscript&quot; style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important; font-size: 16px !important; background-color: transparent !important;&quot;&gt;&lt;/sup&gt;&lt;/span&gt;&lt;span style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;.&lt;/span&gt;   &lt;/p&gt;&lt;/li&gt;&lt;li style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;p id=&quot;p-rc_c7e92bf12b866dd6-22&quot; style=&quot;text-align: left; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;span style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;3. Solicitar información del evento&lt;/span&gt;&lt;span class=&quot;&quot; style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;sup class=&quot;superscript&quot; style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important; font-size: 16px !important; background-color: transparent !important;&quot;&gt;&lt;/sup&gt;&lt;/span&gt;&lt;span style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;.&lt;/span&gt;   &lt;/p&gt;&lt;/li&gt;&lt;li style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;p id=&quot;p-rc_c7e92bf12b866dd6-23&quot; style=&quot;text-align: left; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;span style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;4.&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff)); text-align: center;&quot;&gt;&quot;Datos del evento&quot;.&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;li style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;p id=&quot;p-rc_c7e92bf12b866dd6-24&quot; style=&quot;text-align: left; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;span style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;5. Solicitar información de reserva&lt;/span&gt;&lt;span class=&quot;&quot; style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;sup class=&quot;superscript&quot; style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important; font-size: 16px !important; background-color: transparent !important;&quot;&gt;&lt;/sup&gt;&lt;/span&gt;&lt;span style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;.&lt;/span&gt;   &lt;/p&gt;&lt;/li&gt;&lt;li style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;p id=&quot;p-rc_c7e92bf12b866dd6-25&quot; style=&quot;text-align: left; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;span style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;6.&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff)); text-align: center;&quot;&gt;&quot;Lista de reservas&quot;.&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;li style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;p id=&quot;p-rc_c7e92bf12b866dd6-26&quot; style=&quot;text-align: left; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;span style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;7. Calcular listado de reservas&lt;/span&gt;&lt;span class=&quot;&quot; style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;sup class=&quot;superscript&quot; style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important; font-size: 16px !important; background-color: transparent !important;&quot;&gt;&lt;/sup&gt;&lt;/span&gt;&lt;span style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;.&lt;/span&gt;   &lt;/p&gt;&lt;/li&gt;&lt;li style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;p id=&quot;p-rc_c7e92bf12b866dd6-27&quot; style=&quot;text-align: left; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;span style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;8. Generar reporte de reservas&lt;/span&gt;&lt;span class=&quot;&quot; style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;sup class=&quot;superscript&quot; style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important; font-size: 16px !important; background-color: transparent !important;&quot;&gt;&lt;/sup&gt;&lt;/span&gt;&lt;span style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;.&lt;/span&gt;   &lt;/p&gt;&lt;/li&gt;&lt;li style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;p id=&quot;p-rc_c7e92bf12b866dd6-28&quot; style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;/p&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff)); line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;9. &quot;reporte generado&quot;&lt;/span&gt;&lt;span class=&quot;&quot; style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff)); line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;sup class=&quot;superscript&quot; style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important; font-size: 16px !important; background-color: transparent !important;&quot;&gt;&lt;/sup&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff)); line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;.&lt;/span&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;&lt;/li&gt;&lt;li style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff)); line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;10.&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff));&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff));&quot;&gt;&quot;reporte generado&quot;&lt;/span&gt;&lt;/div&gt;&lt;/li&gt;&lt;li style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;p id=&quot;p-rc_c7e92bf12b866dd6-29&quot; style=&quot;text-align: left; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;span style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;11.a. &quot;Ok&quot;&lt;/span&gt;&lt;span class=&quot;&quot; style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;sup class=&quot;superscript&quot; style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important; font-size: 16px !important; background-color: transparent !important;&quot;&gt;&lt;/sup&gt;&lt;/span&gt;   &lt;/p&gt;&lt;/li&gt;&lt;li style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;p id=&quot;p-rc_c7e92bf12b866dd6-30&quot; style=&quot;text-align: left; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;span style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;11.b. Reporte&lt;/span&gt;&lt;span class=&quot;&quot; style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;sup class=&quot;superscript&quot; style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important; font-size: 16px !important; background-color: transparent !important;&quot;&gt;&lt;/sup&gt;&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;" vertex="1">
+          <mxGeometry height="330" width="260" x="1030" y="125" as="geometry" />
+        </mxCell>
+        <mxCell id="mUKOU2DwEa8Km2_gQadQ-33" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;span class=&quot;&quot;&gt;&lt;b&gt;¿Se requiere un solo caso de uso o dos? Argumenten a partir de lo realizado:&lt;/b&gt;&lt;br/&gt;Solo un caso de uso, el cual es &quot;Generar reporte de reservas&quot;, y este incluye (mediante la relación &lt;code&gt;&amp;lt;&amp;lt;include&amp;gt;&amp;gt;&lt;/code&gt;) al de &quot;Consultar eventos&quot;&lt;/span&gt;&lt;span class=&quot;&quot;&gt;&lt;sup class=&quot;superscript&quot;&gt;&lt;/sup&gt;&lt;/span&gt;&lt;span&gt;.&lt;/span&gt;" vertex="1">
+          <mxGeometry height="100" width="500" x="80" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="mUKOU2DwEa8Km2_gQadQ-34" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Escenario Asignado: Reservas&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="290" x="30" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="mUKOU2DwEa8Km2_gQadQ-36" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="400" width="1010" x="20" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mUKOU2DwEa8Km2_gQadQ-37" edge="1" parent="1" style="endArrow=block;html=1;strokeWidth=1.5;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="900" y="160" as="sourcePoint" />
+            <mxPoint x="900" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mUKOU2DwEa8Km2_gQadQ-38" edge="1" parent="1" style="endArrow=block;html=1;strokeWidth=1.5;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="850" y="300" as="sourcePoint" />
+            <mxPoint x="850" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mUKOU2DwEa8Km2_gQadQ-41" parent="1" style="text;html=1;fontSize=14;align=center;" value="5." vertex="1">
+          <mxGeometry height="24" width="40" x="910" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="mUKOU2DwEa8Km2_gQadQ-42" parent="1" style="text;html=1;fontSize=14;align=center;" value="6." vertex="1">
+          <mxGeometry height="24" width="40" x="800" y="210" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

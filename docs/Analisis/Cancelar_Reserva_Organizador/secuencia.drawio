@@ -1,0 +1,161 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="seq-Cancelar_Reserva_Organizador">
+    <mxGraphModel dx="842" dy="550" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <UserObject label="" plantUmlData='{"data": "@startuml\nhide footbox\nactor \"10 mins de una reserva\" as Timer10Min\ncontrol Gesti\u00f3nReserva as GestionReserva\nentity Evento as Evento\nentity Reserva as Reserva\n\nTimer10Min -&gt; GestionReserva : 1. Notificar vencimiento (10 mins)\nGestionReserva -&gt; Evento : 2. Consultar evento asociado\nEvento --&gt; GestionReserva : 3. Datos del evento\nGestionReserva -&gt; Reserva : 4. Consultar reserva Pendiente vencida\nReserva --&gt; GestionReserva : 5. Reserva Pendiente sin confirmar\nGestionReserva -&gt; Reserva : 6. Cambiar estado a Vencida y liberar cupo\nReserva --&gt; GestionReserva : 7. Reserva vencida, cupo liberado\n@enduml", "config": null}' id="seq_Cancelar_Reserva_Organizador-1">
+          <mxCell connectable="0" parent="1" style="group;transparentBounds=1;editIcon=1;lockedGroup=0;groupPadding=10;" vertex="1">
+            <mxGeometry as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="seq_Cancelar_Reserva_Organizador-title" parent="seq_Cancelar_Reserva_Organizador-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;CdU 9 · Cancelar reserva por vencimiento - 10 mins (Diagrama de secuencia)&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="320" x="20" y="15" as="geometry" />
+        </mxCell>
+        <UserObject label="" plantUmlId="pl_5" plantUmlBaseStyle="shape=umlLifeline;perimeter=lifelinePerimeter;participant=headless;size=61.49;lifelineMirror=1;dashPattern=5 5;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&amp;quot;edgeStyle&amp;quot;:&amp;quot;sequenceEdgeStyle&amp;quot;,&amp;quot;libavoidRouting&amp;quot;:0,&amp;quot;curved&amp;quot;:0,&amp;quot;rounded&amp;quot;:0};fillColor=none;strokeColor=#181818;strokeWidth=0.5;" plantUmlBaseValue="" id="seq_Cancelar_Reserva_Organizador-pl-0">
+          <mxCell parent="seq_Cancelar_Reserva_Organizador-1" style="shape=umlLifeline;perimeter=lifelinePerimeter;participant=headless;size=61.49;lifelineMirror=1;dashPattern=5 5;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&amp;quot;edgeStyle&amp;quot;:&amp;quot;sequenceEdgeStyle&amp;quot;,&amp;quot;libavoidRouting&amp;quot;:0,&amp;quot;curved&amp;quot;:0,&amp;quot;rounded&amp;quot;:0};fillColor=none;strokeColor=#181818;strokeWidth=0.5;" vertex="1">
+            <mxGeometry height="362.15" width="189.0" x="20.0" y="114.0" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="act_0" plantUmlBaseStyle='rounded=0;fillColor=#FFFFFF;strokeColor=#181818;strokeWidth=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={"edgeStyle":"sequenceEdgeStyle","libavoidRouting":0,"curved":0,"rounded":0};part=1;' plantUmlBaseValue="" id="seq_Cancelar_Reserva_Organizador-act-0">
+          <mxCell parent="seq_Cancelar_Reserva_Organizador-pl-0" style='rounded=0;fillColor=#FFFFFF;strokeColor=#181818;strokeWidth=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={"edgeStyle":"sequenceEdgeStyle","libavoidRouting":0,"curved":0,"rounded":0};part=1;' vertex="1">
+            <mxGeometry height="29.31" width="10" x="89.5" y="93.8" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="10 mins de una reserva" plantUmlId="p_20" plantUmlBaseStyle="html=1;shape=mxgraph.bpmn.shape;perimeter=ellipsePerimeter;outline=standard;symbol=timer;verticalLabelPosition=bottom;verticalAlign=top;fillColor=#E2E2F0;strokeColor=#181818;fontColor=#000000;fontSize=13;part=1;" plantUmlBaseValue="10 mins de una reserva" id="seq_Cancelar_Reserva_Organizador-ico-0">
+          <mxCell parent="seq_Cancelar_Reserva_Organizador-pl-0" style="html=1;shape=mxgraph.bpmn.shape;perimeter=ellipsePerimeter;outline=standard;symbol=timer;verticalLabelPosition=bottom;verticalAlign=top;fillColor=#E2E2F0;strokeColor=#181818;fontColor=#000000;fontSize=13;part=1;" vertex="1">
+            <mxGeometry height="36" width="36" x="76.5" y="4.0" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="pl_6" plantUmlBaseStyle="shape=umlLifeline;perimeter=lifelinePerimeter;participant=headless;size=47.49;lifelineMirror=1;dashPattern=5 5;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&amp;quot;edgeStyle&amp;quot;:&amp;quot;sequenceEdgeStyle&amp;quot;,&amp;quot;libavoidRouting&amp;quot;:0,&amp;quot;curved&amp;quot;:0,&amp;quot;rounded&amp;quot;:0};fillColor=none;strokeColor=#181818;strokeWidth=0.5;" plantUmlBaseValue="" id="seq_Cancelar_Reserva_Organizador-pl-1">
+          <mxCell parent="seq_Cancelar_Reserva_Organizador-1" style="shape=umlLifeline;perimeter=lifelinePerimeter;participant=headless;size=47.49;lifelineMirror=1;dashPattern=5 5;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&amp;quot;edgeStyle&amp;quot;:&amp;quot;sequenceEdgeStyle&amp;quot;,&amp;quot;libavoidRouting&amp;quot;:0,&amp;quot;curved&amp;quot;:0,&amp;quot;rounded&amp;quot;:0};fillColor=none;strokeColor=#181818;strokeWidth=0.5;" vertex="1">
+            <mxGeometry height="348.15" width="129.0" x="274.0" y="128.0" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="act_1" plantUmlBaseStyle='rounded=0;fillColor=#FFFFFF;strokeColor=#181818;strokeWidth=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={"edgeStyle":"sequenceEdgeStyle","libavoidRouting":0,"curved":0,"rounded":0};part=1;' plantUmlBaseValue="" id="seq_Cancelar_Reserva_Organizador-act-1">
+          <mxCell parent="seq_Cancelar_Reserva_Organizador-pl-1" style='rounded=0;fillColor=#FFFFFF;strokeColor=#181818;strokeWidth=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={"edgeStyle":"sequenceEdgeStyle","libavoidRouting":0,"curved":0,"rounded":0};part=1;' vertex="1">
+            <mxGeometry height="175.86" width="10" x="59.5" y="79.8" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="GestiónReserva" plantUmlId="p_22" plantUmlBaseStyle="ellipse;shape=umlControl;verticalLabelPosition=bottom;verticalAlign=top;spacingTop=-2.5;fillColor=#E2E2F0;strokeColor=#181818;fontColor=#000000;fontSize=14;html=1;part=1;" plantUmlBaseValue="GestiónReserva" id="seq_Cancelar_Reserva_Organizador-ico-1">
+          <mxCell parent="seq_Cancelar_Reserva_Organizador-pl-1" style="ellipse;shape=umlControl;verticalLabelPosition=bottom;verticalAlign=top;spacingTop=-2.5;fillColor=#E2E2F0;strokeColor=#181818;fontColor=#000000;fontSize=14;html=1;part=1;" vertex="1">
+            <mxGeometry height="28" width="24" x="52.5" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="pl_7" plantUmlBaseStyle="shape=umlLifeline;perimeter=lifelinePerimeter;participant=headless;size=43.49;lifelineMirror=1;dashPattern=5 5;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&amp;quot;edgeStyle&amp;quot;:&amp;quot;sequenceEdgeStyle&amp;quot;,&amp;quot;libavoidRouting&amp;quot;:0,&amp;quot;curved&amp;quot;:0,&amp;quot;rounded&amp;quot;:0};fillColor=none;strokeColor=#181818;strokeWidth=0.5;" plantUmlBaseValue="" id="seq_Cancelar_Reserva_Organizador-pl-2">
+          <mxCell parent="seq_Cancelar_Reserva_Organizador-1" style="shape=umlLifeline;perimeter=lifelinePerimeter;participant=headless;size=43.49;lifelineMirror=1;dashPattern=5 5;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&amp;quot;edgeStyle&amp;quot;:&amp;quot;sequenceEdgeStyle&amp;quot;,&amp;quot;libavoidRouting&amp;quot;:0,&amp;quot;curved&amp;quot;:0,&amp;quot;rounded&amp;quot;:0};fillColor=none;strokeColor=#181818;strokeWidth=0.5;" vertex="1">
+            <mxGeometry height="344.15" width="85.0" x="468.0" y="132.0" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="act_2" plantUmlBaseStyle='rounded=0;fillColor=#FFFFFF;strokeColor=#181818;strokeWidth=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={"edgeStyle":"sequenceEdgeStyle","libavoidRouting":0,"curved":0,"rounded":0};part=1;' plantUmlBaseValue="" id="seq_Cancelar_Reserva_Organizador-act-2">
+          <mxCell parent="seq_Cancelar_Reserva_Organizador-pl-2" style='rounded=0;fillColor=#FFFFFF;strokeColor=#181818;strokeWidth=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={"edgeStyle":"sequenceEdgeStyle","libavoidRouting":0,"curved":0,"rounded":0};part=1;' vertex="1">
+            <mxGeometry height="29.31" width="10" x="37.5" y="105.11" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Evento" plantUmlId="p_24" plantUmlBaseStyle="ellipse;shape=umlEntity;verticalLabelPosition=bottom;verticalAlign=top;spacingTop=-4.5;fillColor=#E2E2F0;strokeColor=#181818;fontColor=#000000;fontSize=14;html=1;part=1;" plantUmlBaseValue="Evento" id="seq_Cancelar_Reserva_Organizador-ico-2">
+          <mxCell parent="seq_Cancelar_Reserva_Organizador-pl-2" style="ellipse;shape=umlEntity;verticalLabelPosition=bottom;verticalAlign=top;spacingTop=-4.5;fillColor=#E2E2F0;strokeColor=#181818;fontColor=#000000;fontSize=14;html=1;part=1;" vertex="1">
+            <mxGeometry height="26" width="24" x="30.5" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="pl_8" plantUmlBaseStyle="shape=umlLifeline;perimeter=lifelinePerimeter;participant=headless;size=43.49;lifelineMirror=1;dashPattern=5 5;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&amp;quot;edgeStyle&amp;quot;:&amp;quot;sequenceEdgeStyle&amp;quot;,&amp;quot;libavoidRouting&amp;quot;:0,&amp;quot;curved&amp;quot;:0,&amp;quot;rounded&amp;quot;:0};fillColor=none;strokeColor=#181818;strokeWidth=0.5;" plantUmlBaseValue="" id="seq_Cancelar_Reserva_Organizador-pl-3">
+          <mxCell parent="seq_Cancelar_Reserva_Organizador-1" style="shape=umlLifeline;perimeter=lifelinePerimeter;participant=headless;size=43.49;lifelineMirror=1;dashPattern=5 5;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&amp;quot;edgeStyle&amp;quot;:&amp;quot;sequenceEdgeStyle&amp;quot;,&amp;quot;libavoidRouting&amp;quot;:0,&amp;quot;curved&amp;quot;:0,&amp;quot;rounded&amp;quot;:0};fillColor=none;strokeColor=#181818;strokeWidth=0.5;" vertex="1">
+            <mxGeometry height="344.15" width="85.0" x="618.0" y="132.0" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="act_3" plantUmlBaseStyle='rounded=0;fillColor=#FFFFFF;strokeColor=#181818;strokeWidth=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={"edgeStyle":"sequenceEdgeStyle","libavoidRouting":0,"curved":0,"rounded":0};part=1;' plantUmlBaseValue="" id="seq_Cancelar_Reserva_Organizador-act-3">
+          <mxCell parent="seq_Cancelar_Reserva_Organizador-pl-3" style='rounded=0;fillColor=#FFFFFF;strokeColor=#181818;strokeWidth=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={"edgeStyle":"sequenceEdgeStyle","libavoidRouting":0,"curved":0,"rounded":0};part=1;' vertex="1">
+            <mxGeometry height="87.93" width="10" x="37.5" y="163.73" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Reserva" plantUmlId="p_26" plantUmlBaseStyle="ellipse;shape=umlEntity;verticalLabelPosition=bottom;verticalAlign=top;spacingTop=-4.5;fillColor=#E2E2F0;strokeColor=#181818;fontColor=#000000;fontSize=14;html=1;part=1;" plantUmlBaseValue="Reserva" id="seq_Cancelar_Reserva_Organizador-ico-3">
+          <mxCell parent="seq_Cancelar_Reserva_Organizador-pl-3" style="ellipse;shape=umlEntity;verticalLabelPosition=bottom;verticalAlign=top;spacingTop=-4.5;fillColor=#E2E2F0;strokeColor=#181818;fontColor=#000000;fontSize=14;html=1;part=1;" vertex="1">
+            <mxGeometry height="26" width="24" x="30.5" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="1. Notificar vencimiento (10 mins)" plantUmlId="msg_10" plantUmlBaseStyle="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="1. Notificar vencimiento (10 mins)" id="seq_Cancelar_Reserva_Organizador-msg-0">
+          <mxCell edge="1" parent="seq_Cancelar_Reserva_Organizador-1" source="seq_Cancelar_Reserva_Organizador-act-0" style="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="seq_Cancelar_Reserva_Organizador-act-1">
+            <mxGeometry relative="1" x="0" as="geometry">
+              <Array as="points">
+                <mxPoint x="226.5" y="207.8" />
+              </Array>
+              <mxPoint x="119.5" y="207.8" as="sourcePoint" />
+              <mxPoint x="333.5" y="207.8" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="2. Consultar evento asociado" plantUmlId="msg_11" plantUmlBaseStyle="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="2. Consultar evento asociado" id="seq_Cancelar_Reserva_Organizador-msg-1">
+          <mxCell edge="1" parent="seq_Cancelar_Reserva_Organizador-1" source="seq_Cancelar_Reserva_Organizador-act-1" style="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="seq_Cancelar_Reserva_Organizador-act-2">
+            <mxGeometry relative="1" x="0" as="geometry">
+              <Array as="points">
+                <mxPoint x="424.5" y="237.11" />
+              </Array>
+              <mxPoint x="343.5" y="237.11" as="sourcePoint" />
+              <mxPoint x="505.5" y="237.11" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="3. Datos del evento" plantUmlId="msg_12" plantUmlBaseStyle="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;dashed=1;dashPattern=2 2;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="3. Datos del evento" id="seq_Cancelar_Reserva_Organizador-msg-2">
+          <mxCell edge="1" parent="seq_Cancelar_Reserva_Organizador-1" source="seq_Cancelar_Reserva_Organizador-pl-2" style="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;dashed=1;dashPattern=2 2;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="seq_Cancelar_Reserva_Organizador-act-1">
+            <mxGeometry relative="1" x="0" as="geometry">
+              <Array as="points">
+                <mxPoint x="424.5" y="266.42" />
+              </Array>
+              <mxPoint x="505.5" y="266.42" as="sourcePoint" />
+              <mxPoint x="343.5" y="266.42" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="4. Consultar reserva Pendiente vencida" plantUmlId="msg_13" plantUmlBaseStyle="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="4. Consultar reserva Pendiente vencida" id="seq_Cancelar_Reserva_Organizador-msg-3">
+          <mxCell edge="1" parent="seq_Cancelar_Reserva_Organizador-1" source="seq_Cancelar_Reserva_Organizador-act-1" style="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="seq_Cancelar_Reserva_Organizador-act-3">
+            <mxGeometry relative="1" x="0" as="geometry">
+              <Array as="points">
+                <mxPoint x="499.5" y="295.73" />
+              </Array>
+              <mxPoint x="343.5" y="295.73" as="sourcePoint" />
+              <mxPoint x="655.5" y="295.73" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="5. Reserva Pendiente sin confirmar" plantUmlId="msg_14" plantUmlBaseStyle="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;dashed=1;dashPattern=2 2;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="5. Reserva Pendiente sin confirmar" id="seq_Cancelar_Reserva_Organizador-msg-4">
+          <mxCell edge="1" parent="seq_Cancelar_Reserva_Organizador-1" source="seq_Cancelar_Reserva_Organizador-act-3" style="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;dashed=1;dashPattern=2 2;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="seq_Cancelar_Reserva_Organizador-act-1">
+            <mxGeometry relative="1" x="0" as="geometry">
+              <Array as="points">
+                <mxPoint x="499.5" y="325.04" />
+              </Array>
+              <mxPoint x="655.5" y="325.04" as="sourcePoint" />
+              <mxPoint x="343.5" y="325.04" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="6. Cambiar estado a Vencida y liberar cupo" plantUmlId="msg_15" plantUmlBaseStyle="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="6. Cambiar estado a Vencida y liberar cupo" id="seq_Cancelar_Reserva_Organizador-msg-5">
+          <mxCell edge="1" parent="seq_Cancelar_Reserva_Organizador-1" source="seq_Cancelar_Reserva_Organizador-act-1" style="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="seq_Cancelar_Reserva_Organizador-act-3">
+            <mxGeometry relative="1" x="0" as="geometry">
+              <Array as="points">
+                <mxPoint x="499.5" y="354.35" />
+              </Array>
+              <mxPoint x="343.5" y="354.35" as="sourcePoint" />
+              <mxPoint x="655.5" y="354.35" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="7. Reserva vencida, cupo liberado" plantUmlId="msg_16" plantUmlBaseStyle="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;dashed=1;dashPattern=2 2;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="7. Reserva vencida, cupo liberado" id="seq_Cancelar_Reserva_Organizador-msg-6">
+          <mxCell edge="1" parent="seq_Cancelar_Reserva_Organizador-1" source="seq_Cancelar_Reserva_Organizador-pl-3" style="endArrow=classic;endFill=1;endSize=9;html=1;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;dashed=1;dashPattern=2 2;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="seq_Cancelar_Reserva_Organizador-pl-1">
+            <mxGeometry relative="1" x="0" as="geometry">
+              <Array as="points">
+                <mxPoint x="499.5" y="383.66" />
+              </Array>
+              <mxPoint x="655.5" y="383.66" as="sourcePoint" />
+              <mxPoint x="343.5" y="383.66" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <mxCell id="seq_Cancelar_Reserva_Organizador-note" parent="seq_Cancelar_Reserva_Organizador-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;Vencimiento automático (10 minutos):&lt;/b&gt; Al cumplirse 10 minutos sin confirmación, la reserva Pendiente pasa a Vencida y libera el cupo provisional." vertex="1">
+          <mxGeometry height="40" width="713.0" x="20" y="444.15" as="geometry" />
+        </mxCell>
+        <mxCell id="seq_Cancelar_Reserva_Organizador-border" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1">
+          <mxGeometry height="401.15" width="743.0" x="10" y="90" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

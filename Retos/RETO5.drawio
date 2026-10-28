@@ -1,0 +1,67 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="K0tC5y9ASdHi9Xqh26IT">
+    <mxGraphModel dx="1038" dy="835" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="titulo" parent="1" style="text;html=1;fontSize=18;fontStyle=1;align=left;" value="RETO 5 - ¡Nos falta una clase!" vertex="1">
+          <mxGeometry height="30" width="300" x="40" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="actor" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Estudiante" vertex="1">
+          <mxGeometry height="80" width="40" x="40" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="pantalla" parent="1" style="shape=umlBoundary;whiteSpace=wrap;html=1;verticalLabelPosition=bottom;verticalAlign=top;" value="Pantalla Evento" vertex="1">
+          <mxGeometry height="60" width="80" x="200" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="calculo" parent="1" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;verticalLabelPosition=bottom;verticalAlign=top;" value="CalcularDisponibilidad" vertex="1">
+          <mxGeometry height="70" width="60" x="400" y="315" as="geometry" />
+        </mxCell>
+        <mxCell id="evento" parent="1" style="shape=umlEntity;whiteSpace=wrap;html=1;verticalLabelPosition=bottom;verticalAlign=top;" value="Evento" vertex="1">
+          <mxGeometry height="60" width="60" x="600" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="gestion" parent="1" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;verticalLabelPosition=bottom;verticalAlign=top;" value="Gestión Reserva" vertex="1">
+          <mxGeometry height="70" width="60" x="400" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="reserva" parent="1" style="shape=umlEntity;whiteSpace=wrap;html=1;verticalLabelPosition=bottom;verticalAlign=top;" value="Reserva" vertex="1">
+          <mxGeometry height="60" width="60" x="600" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="actor" style="endArrow=none;html=1;" target="pantalla">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="pantalla" style="endArrow=none;html=1;" target="calculo">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="calculo" style="endArrow=none;html=1;" target="reserva">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="pantalla" style="endArrow=none;html=1;" target="gestion">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="gestion" style="endArrow=none;html=1;" target="reserva">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TLhLbefNvz9FKqGhDcTQ-21" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;span class=&quot;&quot;&gt;&lt;b&gt;Nueva clase (si aplica), responsabilidad y colaboradores:&lt;/b&gt;&lt;/span&gt;&lt;span class=&quot;&quot;&gt;&lt;sup class=&quot;superscript&quot;&gt;&lt;/sup&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="370" x="40" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="TLhLbefNvz9FKqGhDcTQ-24" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;li&gt;&lt;p&gt;&lt;b&gt;Nueva clase:&lt;/b&gt; Gestión Reserva (clase control).&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff));&quot;&gt;Responsabilidad:&lt;/b&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff));&quot;&gt; Encargarse de crear la reserva dejándola en estado Pendiente, y verificar si el estudiante la confirma o si ya pasaron los 10 minutos para pasarla a Vencida.&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p style=&quot;&quot;&gt;&lt;b&gt;Colaboradores:&lt;/b&gt; La clase &quot;CalcularDisponibilidad&quot; es un colaborador para saber si hay cupo antes de crearla, al igual que la entidad &quot;Reserva&quot;.&lt;/p&gt;&lt;/li&gt;" vertex="1">
+          <mxGeometry height="150" width="340" x="60" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="TLhLbefNvz9FKqGhDcTQ-25" edge="1" parent="1" source="calculo" style="endArrow=none;html=1;rounded=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;curved=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1.005;exitY=0.503;exitDx=0;exitDy=0;exitPerimeter=0;" target="evento" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="470" y="350" as="sourcePoint" />
+            <mxPoint x="420" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TLhLbefNvz9FKqGhDcTQ-27" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;span class=&quot;&quot;&gt;&lt;b&gt;Estados y transiciones de Reserva (no confundir estado con pantalla):&lt;/b&gt;&lt;/span&gt;&lt;span class=&quot;&quot;&gt;&lt;sup class=&quot;superscript&quot;&gt;&lt;/sup&gt;&lt;/span&gt;&lt;span class=&quot;&quot;&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="340" x="10" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="TLhLbefNvz9FKqGhDcTQ-28" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;li&gt;&lt;p&gt;&lt;b&gt;Estados válidos:&lt;/b&gt; Pendiente, Confirmada y Vencida.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;b&gt;Transiciones y eventos:&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt;De inicio a &lt;b&gt;Pendiente&lt;/b&gt;: el evento que la produce es &quot;Solicitar reserva&quot;.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;De Pendiente a &lt;b&gt;Confirmada&lt;/b&gt;: el evento que la produce es &quot;Confirmar antes de vencer los 10 minutos&quot;.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;De Pendiente a &lt;b&gt;Vencida&lt;/b&gt;: el evento que la produce es &quot;Pasar 10 minutos sin confirmar&quot;.&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;" vertex="1">
+          <mxGeometry height="140" width="560" x="10" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="TLhLbefNvz9FKqGhDcTQ-29" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="320" width="720" x="20" y="290" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

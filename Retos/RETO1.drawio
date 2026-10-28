@@ -1,0 +1,148 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="m7ddUk4dYkYcQt_YxW8-">
+    <mxGraphModel dx="722" dy="581" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="CmfhwIETVuVjCg9llTn6-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="RETO 1 - Detectives de responsabilidades" vertex="1">
+          <mxGeometry height="30" width="210" x="40" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="CmfhwIETVuVjCg9llTn6-2" parent="1" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;fixedHeader=1;tableRender=collapsed;" value="" vertex="1">
+          <mxGeometry height="320" width="490" x="70" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="CmfhwIETVuVjCg9llTn6-3" parent="CmfhwIETVuVjCg9llTn6-2" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" value="" vertex="1">
+          <mxGeometry height="40" width="490" as="geometry" />
+        </mxCell>
+        <mxCell id="CmfhwIETVuVjCg9llTn6-4" parent="CmfhwIETVuVjCg9llTn6-3" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;pointerEvents=1;" value="&lt;table class=&quot;&quot; style=&quot;margin-bottom: 32px; font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;thead style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;tr style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;td style=&quot;border: 1px solid rgb(196, 199, 197); padding: 8px 12px; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;strong style=&quot;line-height: 1.15 !important; margin: 0px !important;&quot;&gt;Clase&lt;/strong&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="40" width="130" as="geometry">
+            <mxRectangle height="40" width="130" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CmfhwIETVuVjCg9llTn6-5" parent="CmfhwIETVuVjCg9llTn6-3" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;pointerEvents=1;" value="&lt;span&gt;&lt;/span&gt;&lt;span&gt;Tipo de Clase&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="90" x="130" as="geometry">
+            <mxRectangle height="40" width="90" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CmfhwIETVuVjCg9llTn6-6" parent="CmfhwIETVuVjCg9llTn6-3" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;pointerEvents=1;" value="&lt;span&gt;&lt;/span&gt;&lt;span&gt;Responsabilidad esencial (en una frase)&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="270" x="220" as="geometry">
+            <mxRectangle height="40" width="270" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CmfhwIETVuVjCg9llTn6-7" parent="CmfhwIETVuVjCg9llTn6-2" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" value="" vertex="1">
+          <mxGeometry height="50" width="490" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="CmfhwIETVuVjCg9llTn6-8" parent="CmfhwIETVuVjCg9llTn6-7" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;pointerEvents=1;" value="Evento" vertex="1">
+          <mxGeometry height="50" width="130" as="geometry">
+            <mxRectangle height="50" width="130" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CmfhwIETVuVjCg9llTn6-9" parent="CmfhwIETVuVjCg9llTn6-7" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;pointerEvents=1;" value="&lt;span&gt;&lt;b&gt;&lt;/b&gt;&lt;/span&gt;&lt;span&gt;Entidad&lt;/span&gt;" vertex="1">
+          <mxGeometry height="50" width="90" x="130" as="geometry">
+            <mxRectangle height="50" width="90" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CmfhwIETVuVjCg9llTn6-10" parent="CmfhwIETVuVjCg9llTn6-7" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;pointerEvents=1;" value="&lt;span&gt;&lt;/span&gt;&lt;p id=&quot;p-rc_6a0da5551febf519-106&quot;&gt;&lt;span&gt;Recordar a largo plazo la información del evento (como su aforo máximo y cupos bloqueados)&lt;/span&gt;&lt;span&gt;&lt;sup class=&quot;superscript&quot;&gt;&lt;/sup&gt;&lt;/span&gt;&lt;span&gt;.&lt;/span&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="50" width="270" x="220" as="geometry">
+            <mxRectangle height="50" width="270" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CmfhwIETVuVjCg9llTn6-11" parent="CmfhwIETVuVjCg9llTn6-2" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" value="" vertex="1">
+          <mxGeometry height="70" width="490" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="CmfhwIETVuVjCg9llTn6-12" parent="CmfhwIETVuVjCg9llTn6-11" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;pointerEvents=1;" value="Reserva" vertex="1">
+          <mxGeometry height="70" width="130" as="geometry">
+            <mxRectangle height="70" width="130" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CmfhwIETVuVjCg9llTn6-13" parent="CmfhwIETVuVjCg9llTn6-11" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;pointerEvents=1;" value="&lt;span&gt;&lt;b&gt;&lt;/b&gt;&lt;/span&gt;&lt;span&gt;Entidad&lt;/span&gt;" vertex="1">
+          <mxGeometry height="70" width="90" x="130" as="geometry">
+            <mxRectangle height="70" width="90" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CmfhwIETVuVjCg9llTn6-14" parent="CmfhwIETVuVjCg9llTn6-11" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;pointerEvents=1;" value="&lt;span&gt;&lt;/span&gt;&lt;p id=&quot;p-rc_6a0da5551febf519-107&quot;&gt;&lt;span&gt;Recordar a largo plazo la información y los estados de todas las reservas (confirmadas, pendientes y canceladas)&lt;/span&gt;&lt;span&gt;&lt;sup class=&quot;superscript&quot;&gt;&lt;/sup&gt;&lt;/span&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="70" width="270" x="220" as="geometry">
+            <mxRectangle height="70" width="270" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CmfhwIETVuVjCg9llTn6-15" parent="CmfhwIETVuVjCg9llTn6-2" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" value="" vertex="1">
+          <mxGeometry height="40" width="490" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="CmfhwIETVuVjCg9llTn6-16" parent="CmfhwIETVuVjCg9llTn6-15" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;pointerEvents=1;" value="PantallaEventos" vertex="1">
+          <mxGeometry height="40" width="130" as="geometry">
+            <mxRectangle height="40" width="130" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CmfhwIETVuVjCg9llTn6-17" parent="CmfhwIETVuVjCg9llTn6-15" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;pointerEvents=1;" value="&lt;span&gt;&lt;b&gt;&lt;/b&gt;&lt;/span&gt;&lt;span&gt;Límite&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="90" x="130" as="geometry">
+            <mxRectangle height="40" width="90" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CmfhwIETVuVjCg9llTn6-18" parent="CmfhwIETVuVjCg9llTn6-15" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;pointerEvents=1;" value="&lt;span&gt;Mostrar información al estudiante acerca de los eventos existentes&lt;/span&gt;&lt;span&gt;&lt;sup class=&quot;superscript&quot;&gt;&lt;/sup&gt;&lt;/span&gt;&lt;span&gt;.&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="270" x="220" as="geometry">
+            <mxRectangle height="40" width="270" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CmfhwIETVuVjCg9llTn6-19" parent="CmfhwIETVuVjCg9llTn6-2" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" value="" vertex="1">
+          <mxGeometry height="40" width="490" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="CmfhwIETVuVjCg9llTn6-20" parent="CmfhwIETVuVjCg9llTn6-19" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;pointerEvents=1;" value="CalcularDisponibilidad" vertex="1">
+          <mxGeometry height="40" width="130" as="geometry">
+            <mxRectangle height="40" width="130" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CmfhwIETVuVjCg9llTn6-21" parent="CmfhwIETVuVjCg9llTn6-19" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;pointerEvents=1;" value="&lt;span&gt;Control&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="90" x="130" as="geometry">
+            <mxRectangle height="40" width="90" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CmfhwIETVuVjCg9llTn6-22" parent="CmfhwIETVuVjCg9llTn6-19" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;pointerEvents=1;" value="&lt;span&gt;Hacer el cálculo matemático de disponibilidad de cupos para ver cuántos hay disponibles&lt;/span&gt;&lt;span&gt;&lt;sup class=&quot;superscript&quot;&gt;&lt;/sup&gt;&lt;/span&gt;&lt;span&gt;.&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="270" x="220" as="geometry">
+            <mxRectangle height="40" width="270" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CmfhwIETVuVjCg9llTn6-23" parent="CmfhwIETVuVjCg9llTn6-2" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" value="" vertex="1">
+          <mxGeometry height="40" width="490" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="CmfhwIETVuVjCg9llTn6-24" parent="CmfhwIETVuVjCg9llTn6-23" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;pointerEvents=1;" value="ReporteReservas" vertex="1">
+          <mxGeometry height="40" width="130" as="geometry">
+            <mxRectangle height="40" width="130" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CmfhwIETVuVjCg9llTn6-25" parent="CmfhwIETVuVjCg9llTn6-23" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;pointerEvents=1;" value="&lt;span&gt;&lt;b&gt;&lt;/b&gt;&lt;/span&gt;&lt;span&gt;Límite&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="90" x="130" as="geometry">
+            <mxRectangle height="40" width="90" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CmfhwIETVuVjCg9llTn6-26" parent="CmfhwIETVuVjCg9llTn6-23" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;pointerEvents=1;" value="&lt;span&gt;Mostrar en pantalla el reporte acerca de las reservas establecidas y los cupos disponibles&lt;/span&gt;&lt;span&gt;&lt;sup class=&quot;superscript&quot;&gt;&lt;/sup&gt;&lt;/span&gt;&lt;span&gt;.&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="270" x="220" as="geometry">
+            <mxRectangle height="40" width="270" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CmfhwIETVuVjCg9llTn6-27" parent="CmfhwIETVuVjCg9llTn6-2" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" value="" vertex="1">
+          <mxGeometry height="40" width="490" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="CmfhwIETVuVjCg9llTn6-28" parent="CmfhwIETVuVjCg9llTn6-27" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;pointerEvents=1;" value="InterfazOrganizador" vertex="1">
+          <mxGeometry height="40" width="130" as="geometry">
+            <mxRectangle height="40" width="130" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CmfhwIETVuVjCg9llTn6-29" parent="CmfhwIETVuVjCg9llTn6-27" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;pointerEvents=1;" value="&lt;span&gt;&lt;b&gt;&lt;/b&gt;&lt;/span&gt;&lt;span&gt;Límite&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="90" x="130" as="geometry">
+            <mxRectangle height="40" width="90" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CmfhwIETVuVjCg9llTn6-30" parent="CmfhwIETVuVjCg9llTn6-27" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;pointerEvents=1;" value="&lt;span&gt;Interfaz en pantalla para que el organizador pueda hacer la gestión de eventos y cupos&lt;/span&gt;&lt;span&gt;&lt;sup class=&quot;superscript&quot;&gt;&lt;/sup&gt;&lt;/span&gt;&lt;span&gt;.&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="270" x="220" as="geometry">
+            <mxRectangle height="40" width="270" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CmfhwIETVuVjCg9llTn6-31" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Pregunta: ¿Qué problema habría si PantallaEventos calculara directamente la disponibilidad?" vertex="1">
+          <mxGeometry height="30" width="520" x="55" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="CmfhwIETVuVjCg9llTn6-32" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;span class=&quot;&quot;&gt;PantallaEventos es una clase límite, la cual no debería tener funciones de control para así respetar la arquitectura limpia&lt;/span&gt;&lt;span class=&quot;&quot;&gt;&lt;sup class=&quot;superscript&quot;&gt;&lt;/sup&gt;&lt;/span&gt;&lt;span&gt;. Si el cálculo se hace en la pantalla y luego hay necesidad de hacer cambios en la forma de calcular, se tendría que ir a cambiar el código de todas las interfaces que usen ese cálculo (como la InterfazOrganizador), generando problemas de tiempo y desorden en el código&lt;/span&gt;&lt;span class=&quot;&quot;&gt;&lt;sup class=&quot;superscript&quot;&gt;&lt;/sup&gt;&lt;/span&gt;&lt;span&gt;.&lt;/span&gt;" vertex="1">
+          <mxGeometry height="90" width="505" x="55" y="520" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
