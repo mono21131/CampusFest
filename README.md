@@ -24,9 +24,9 @@ El sistema está pensado para dos tipos de usuarios:
 
 Actualmente, el proyecto está en su etapa de **diseño y planificación**. Antes de tirar código, dejamos todo bien estructurado en diagramas:
 
-* **`docs/CdU/`**: Contiene los diagramas de **Casos de Uso**, que muestran de forma clara qué acciones puede realizar cada usuario en la plataforma.
-* **`docs/Analisis/`**: Explica cómo funciona el sistema por dentro. Incluye los diagramas de **colaboración, comunicación y secuencia** para cada función (consultar cupos, reservar, cancelar, reportes, etc.), además del modelo de datos (`Clases_Entidad`).
-* **`Retos/`**: Una serie de retos prácticos (`RETO1` al `RETO8`) donde fuimos resolviendo paso a paso diferentes decisiones de diseño y arquitectura.
+* **`CdU/`**: Contiene los diagramas de **Casos de Uso**, que muestran de forma clara qué acciones puede realizar cada usuario en la plataforma.
+* **`Analisis/`**: Explica cómo funciona el sistema por dentro. Incluye los diagramas de **colaboración, comunicación y secuencia** para cada función (consultar cupos, reservar, cancelar, reportes, etc.), además del modelo de datos (`Clases_Entidad`).
+* **`docs/`**: Contiene los retos y ejercicios prácticos (`RETO1` al `RETO8`) donde se fueron resolviendo paso a paso las diferentes decisiones de diseño y arquitectura.
 
 ---
 
